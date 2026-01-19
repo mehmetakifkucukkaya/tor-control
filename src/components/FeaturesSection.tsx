@@ -3,32 +3,32 @@ import { BarChart3, DollarSign, Target, HeadphonesIcon, Coins } from "lucide-rea
 const features = [
   {
     icon: BarChart3,
-    title: "Performance Tracking",
-    description: "Real-time analytics and insights to monitor your streaming performance and growth metrics.",
+    title: "Performans Takibi",
+    description: "Yayın performansınızı ve büyüme metriklerinizi izlemek için gerçek zamanlı analitik ve içgörüler.",
     color: "cyan",
   },
   {
     icon: DollarSign,
-    title: "Earnings Monitoring",
-    description: "Track your income, view detailed breakdowns, and forecast your monthly earnings.",
+    title: "Kazanç Takibi",
+    description: "Gelirinizi takip edin, detaylı dökümlerı görün ve aylık kazançlarınızı tahmin edin.",
     color: "magenta",
   },
   {
     icon: Target,
-    title: "Goal & Mission System",
-    description: "Set weekly targets, complete missions, and earn bonus rewards for achieving milestones.",
+    title: "Hedef & Görev Sistemi",
+    description: "Haftalık hedefler belirleyin, görevleri tamamlayın ve kilometre taşlarına ulaştığınızda bonus ödüller kazanın.",
     color: "purple",
   },
   {
     icon: HeadphonesIcon,
-    title: "Real-time Support",
-    description: "24/7 dedicated manager support to help you optimize and grow your streaming career.",
+    title: "Gerçek Zamanlı Destek",
+    description: "Yayın kariyerinizi optimize etmenize ve büyütmenize yardımcı olmak için 7/24 özel yönetici desteği.",
     color: "pink",
   },
   {
     icon: Coins,
-    title: "Jeton Optimization",
-    description: "Maximize your virtual gift rewards with our strategic jeton support program.",
+    title: "Jeton Optimizasyonu",
+    description: "Stratejik jeton destek programımızla sanal hediye ödüllerinizi maksimuma çıkarın.",
     color: "cyan",
   },
 ];
@@ -69,11 +69,11 @@ const FeaturesSection = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            What We{" "}
-            <span className="gradient-text">Offer</span>
+            Neler{" "}
+            <span className="gradient-text">Sunuyoruz</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Everything you need to succeed as a TikTok Live streamer, all in one platform.
+            TikTok Live yayıncısı olarak başarılı olmanız için ihtiyacınız olan her şey, tek bir platformda.
           </p>
         </div>
 
