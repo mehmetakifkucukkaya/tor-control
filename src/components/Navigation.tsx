@@ -57,12 +57,16 @@ const Navigation = () => {
 
           {/* CTA buttons */}
           <div className="hidden md:flex items-center gap-4">
-            <Button variant="ghost" size="sm">
-              İletişim
-            </Button>
-            <Button variant="neon" size="sm">
-              Hemen Başvur
-            </Button>
+            <a href="#apply">
+              <Button variant="ghost" size="sm">
+                İletişim
+              </Button>
+            </a>
+            <a href="#apply">
+              <Button variant="neon" size="sm">
+                Hemen Başvur
+              </Button>
+            </a>
           </div>
 
           {/* Mobile menu button */}
@@ -94,12 +98,16 @@ const Navigation = () => {
               ))}
               <hr className="border-border/30" />
               <div className="flex flex-col gap-3 pt-2">
-                <Button variant="neon-outline" size="lg" className="w-full">
-                  İletişim
-                </Button>
-                <Button variant="neon" size="lg" className="w-full">
-                  Hemen Başvur
-                </Button>
+                <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button variant="neon-outline" size="lg" className="w-full">
+                    İletişim
+                  </Button>
+                </a>
+                <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
+                  <Button variant="neon" size="lg" className="w-full">
+                    Hemen Başvur
+                  </Button>
+                </a>
               </div>
             </div>
           </div>
