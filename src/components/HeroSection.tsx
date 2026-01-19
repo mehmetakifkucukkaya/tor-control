@@ -33,24 +33,30 @@ const HeroSection = () => {
         <source src={heroVideo} type="video/mp4" />
         Your browser does not support the video tag.
       </video>
-      
+
       {/* Dark overlay for readability */}
       <div className="absolute inset-0 bg-background/60" />
-      
+
       {/* Background effects */}
       <div className="absolute inset-0 overflow-hidden">
         {/* Gradient orbs */}
         <div className="absolute top-1/4 left-1/4 w-96 h-96 bg-neon-purple/15 rounded-full blur-3xl animate-glow-pulse" />
-        <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-magenta/15 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '1s' }} />
-        <div className="absolute top-1/2 right-1/3 w-64 h-64 bg-neon-cyan/10 rounded-full blur-3xl animate-glow-pulse" style={{ animationDelay: '0.5s' }} />
-        
+        <div
+          className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-magenta/15 rounded-full blur-3xl animate-glow-pulse"
+          style={{ animationDelay: "1s" }}
+        />
+        <div
+          className="absolute top-1/2 right-1/3 w-64 h-64 bg-neon-cyan/10 rounded-full blur-3xl animate-glow-pulse"
+          style={{ animationDelay: "0.5s" }}
+        />
+
         {/* Grid overlay */}
-        <div 
+        <div
           className="absolute inset-0 opacity-5"
           style={{
             backgroundImage: `linear-gradient(hsl(var(--neon-purple) / 0.3) 1px, transparent 1px),
                             linear-gradient(90deg, hsl(var(--neon-purple) / 0.3) 1px, transparent 1px)`,
-            backgroundSize: '100px 100px'
+            backgroundSize: "100px 100px",
           }}
         />
       </div>
@@ -65,16 +71,14 @@ const HeroSection = () => {
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
-              TikTok Live'da{" "}
-              <span className="gradient-text">Daha Hızlı Büyü.</span>
+              TikTok Live'da <span className="gradient-text">Daha Hızlı Büyü.</span>
               <br />
-              Profesyonel Destekle{" "}
-              <span className="text-neon-cyan neon-text">Daha Fazla Kazan.</span>
+              Profesyonel Destekle <span className="text-neon-cyan neon-text">Daha Fazla Kazan.</span>
             </h1>
 
             <p className="text-lg md:text-xl text-muted-foreground max-w-xl mx-auto lg:mx-0 opacity-0 animate-fade-in-up animate-delay-200">
-              Lider TikTok Live ajansına katıl ve kazanç potansiyelini maksimuma çıkar. 
-              Uzman rehberliği, performans takibi ve özel destek al.
+              Ajansımıza katıl ve kazanç potansiyelini maksimuma çıkar. Uzman rehberliği, performans takibi ve özel
+              destek al.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 justify-center lg:justify-start opacity-0 animate-fade-in-up animate-delay-300">
@@ -161,7 +165,10 @@ const HeroSection = () => {
                 <p className="text-lg font-display font-bold text-neon-cyan">2.4K</p>
               </div>
 
-              <div className="absolute -bottom-4 -left-4 glass-card p-3 rounded-xl border border-neon-magenta/30 animate-float" style={{ animationDelay: '1s' }}>
+              <div
+                className="absolute -bottom-4 -left-4 glass-card p-3 rounded-xl border border-neon-magenta/30 animate-float"
+                style={{ animationDelay: "1s" }}
+              >
                 <p className="text-xs text-muted-foreground">Bugünkü Jetonlar</p>
                 <p className="text-lg font-display font-bold text-neon-magenta">1,250</p>
               </div>
