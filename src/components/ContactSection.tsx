@@ -4,6 +4,7 @@ import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { Send, Sparkles } from "lucide-react";
 import { toast } from "sonner";
+import patternBg from "@/assets/pattern-bg.jpg";
 
 const ContactSection = () => {
   const [formData, setFormData] = useState({
@@ -26,10 +27,15 @@ const ContactSection = () => {
 
   return (
     <section id="apply" className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 animated-gradient" />
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-40"
+        style={{ backgroundImage: `url(${patternBg})` }}
+      />
+      {/* Gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/90 to-background" />
       <div className="absolute inset-0">
-        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neon-purple/20 rounded-full blur-3xl" />
+        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neon-purple/15 rounded-full blur-3xl" />
       </div>
 
       <div className="container relative z-10 px-4">
