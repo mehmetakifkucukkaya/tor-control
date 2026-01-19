@@ -15,10 +15,10 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Features", href: "#features" },
-    { name: "Benefits", href: "#benefits" },
-    { name: "How It Works", href: "#how-it-works" },
-    { name: "Testimonials", href: "#testimonials" },
+    { name: "Özellikler", href: "#features" },
+    { name: "Avantajlar", href: "#benefits" },
+    { name: "Nasıl Çalışır", href: "#how-it-works" },
+    { name: "Referanslar", href: "#testimonials" },
   ];
 
   return (
@@ -34,7 +34,7 @@ const Navigation = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-foreground" />
             </div>
-            <span className="font-display font-bold text-lg hidden sm:block">TikTok Live Agency</span>
+            <span className="font-display font-bold text-lg hidden sm:block">Tor Connector</span>
           </a>
 
           {/* Desktop navigation */}
@@ -54,10 +54,10 @@ const Navigation = () => {
           {/* CTA buttons */}
           <div className="hidden md:flex items-center gap-4">
             <Button variant="ghost" size="sm">
-              Contact
+              İletişim
             </Button>
             <Button variant="neon" size="sm">
-              Apply Now
+              Hemen Başvur
             </Button>
           </div>
 
@@ -91,10 +91,10 @@ const Navigation = () => {
               <hr className="border-border/30" />
               <div className="flex flex-col gap-3 pt-2">
                 <Button variant="neon-outline" size="lg" className="w-full">
-                  Contact
+                  İletişim
                 </Button>
                 <Button variant="neon" size="lg" className="w-full">
-                  Apply Now
+                  Hemen Başvur
                 </Button>
               </div>
             </div>

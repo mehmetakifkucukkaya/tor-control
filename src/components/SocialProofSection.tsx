@@ -2,33 +2,33 @@ import { Star, Quote } from "lucide-react";
 
 const testimonials = [
   {
-    name: "Sarah Chen",
-    role: "TikTok Creator",
-    avatar: "SC",
-    content: "Joining this agency was the best decision for my streaming career. My earnings tripled in just 3 months!",
+    name: "Ayşe Yılmaz",
+    role: "TikTok İçerik Üreticisi",
+    avatar: "AY",
+    content: "Bu ajansa katılmak yayın kariyerim için en iyi karar oldu. Kazançlarım sadece 3 ayda 3 katına çıktı!",
     rating: 5,
   },
   {
-    name: "Mike Rodriguez",
-    role: "Live Streamer",
-    avatar: "MR",
-    content: "The support team is incredible. They helped me optimize my content and grow my audience exponentially.",
+    name: "Mehmet Kaya",
+    role: "Canlı Yayıncı",
+    avatar: "MK",
+    content: "Destek ekibi inanılmaz. İçeriğimi optimize etmeme ve kitlemi katlanarak büyütmeme yardımcı oldular.",
     rating: 5,
   },
   {
-    name: "Emma Williams",
-    role: "Content Creator",
-    avatar: "EW",
-    content: "Professional, supportive, and results-driven. I've never felt more confident about my streaming future.",
+    name: "Zeynep Demir",
+    role: "İçerik Üreticisi",
+    avatar: "ZD",
+    content: "Profesyonel, destekleyici ve sonuç odaklı. Yayın geleceğim konusunda hiç bu kadar güvende hissetmemiştim.",
     rating: 5,
   },
 ];
 
 const stats = [
-  { value: "500+", label: "Active Streamers", suffix: "" },
-  { value: "$2M", label: "Monthly Revenue", suffix: "+" },
-  { value: "150%", label: "Avg. Growth Rate", suffix: "" },
-  { value: "98%", label: "Satisfaction Rate", suffix: "" },
+  { value: "500+", label: "Aktif Yayıncı", suffix: "" },
+  { value: "₺15M", label: "Aylık Gelir", suffix: "+" },
+  { value: "150%", label: "Ort. Büyüme Oranı", suffix: "" },
+  { value: "98%", label: "Memnuniyet Oranı", suffix: "" },
 ];
 
 const SocialProofSection = () => {
@@ -44,22 +44,22 @@ const SocialProofSection = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Trusted by{" "}
-            <span className="gradient-text">Top Streamers</span>
+            En İyi Yayıncılar{" "}
+            <span className="gradient-text">Bize Güveniyor</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Join the community of successful creators who have transformed their streaming careers with us.
+            Bizimle birlikte yayın kariyerlerini dönüştüren başarılı içerik üreticileri topluluğuna katılın.
           </p>
         </div>
 
         {/* Stats */}
-        <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 max-w-4xl mx-auto mb-16">
+        <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto mb-16">
           {stats.map((stat, index) => (
             <div
               key={index}
-              className="glass-card neon-border p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
+              className="glass-card neon-border p-4 md:p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
             >
-              <p className="text-3xl md:text-4xl font-display font-bold text-neon-cyan mb-2">
+              <p className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-neon-cyan mb-2">
                 {stat.value}<span className="text-neon-magenta">{stat.suffix}</span>
               </p>
               <p className="text-sm text-muted-foreground">{stat.label}</p>
@@ -72,7 +72,7 @@ const SocialProofSection = () => {
           {testimonials.map((testimonial, index) => (
             <div
               key={index}
-              className="glass-card p-8 rounded-2xl border border-border/50 hover:border-neon-purple/30 transition-all duration-300 hover:glow-purple group"
+              className="glass-card p-6 md:p-8 rounded-2xl border border-border/50 hover:border-neon-purple/30 transition-all duration-300 hover:glow-purple group"
             >
               {/* Quote icon */}
               <Quote className="w-8 h-8 text-neon-purple/30 mb-4 group-hover:text-neon-purple/50 transition-colors" />

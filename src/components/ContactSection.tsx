@@ -16,7 +16,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Application submitted successfully! We'll contact you soon.");
+    toast.success("Başvurunuz başarıyla gönderildi! En kısa sürede sizinle iletişime geçeceğiz.");
     setFormData({ name: "", tiktokUsername: "", phone: "", email: "", message: "" });
   };
 
@@ -34,24 +34,24 @@ const ContactSection = () => {
 
       <div className="container relative z-10 px-4">
         <div className="max-w-4xl mx-auto">
-          <div className="glass-card neon-border p-8 md:p-12 rounded-3xl">
-            <div className="grid lg:grid-cols-2 gap-12">
+          <div className="glass-card neon-border p-6 md:p-8 lg:p-12 rounded-3xl">
+            <div className="grid lg:grid-cols-2 gap-8 lg:gap-12">
               {/* Left content */}
               <div className="space-y-6">
                 <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-neon-cyan/30">
                   <Sparkles className="w-4 h-4 text-neon-cyan" />
-                  <span className="text-sm">Start Your Journey</span>
+                  <span className="text-sm">Yolculuğuna Başla</span>
                 </div>
 
-                <h2 className="text-3xl md:text-4xl font-display font-bold">
-                  Ready to{" "}
-                  <span className="gradient-text">Level Up</span>{" "}
-                  Your TikTok Live Career?
+                <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold">
+                  TikTok Live Kariyerini{" "}
+                  <span className="gradient-text">Bir Üst Seviyeye</span>{" "}
+                  Taşımaya Hazır Mısın?
                 </h2>
 
                 <p className="text-muted-foreground">
-                  Join our agency and unlock your full potential as a TikTok Live streamer. 
-                  Fill out the form and our team will get back to you within 24 hours.
+                  Ajansımıza katılın ve TikTok Live yayıncısı olarak tam potansiyelinizi açığa çıkarın. 
+                  Formu doldurun, ekibimiz 24 saat içinde size ulaşacak.
                 </p>
 
                 <div className="space-y-4 pt-4">
@@ -59,19 +59,19 @@ const ContactSection = () => {
                     <div className="w-8 h-8 rounded-full bg-neon-cyan/20 flex items-center justify-center">
                       <span className="text-neon-cyan text-sm">✓</span>
                     </div>
-                    <span className="text-sm">No upfront fees required</span>
+                    <span className="text-sm">Ön ödeme gerektirmez</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-neon-magenta/20 flex items-center justify-center">
                       <span className="text-neon-magenta text-sm">✓</span>
                     </div>
-                    <span className="text-sm">24-hour response time</span>
+                    <span className="text-sm">24 saat içinde yanıt</span>
                   </div>
                   <div className="flex items-center gap-3">
                     <div className="w-8 h-8 rounded-full bg-neon-purple/20 flex items-center justify-center">
                       <span className="text-neon-purple text-sm">✓</span>
                     </div>
-                    <span className="text-sm">Personal onboarding support</span>
+                    <span className="text-sm">Kişisel katılım desteği</span>
                   </div>
                 </div>
               </div>
@@ -83,7 +83,7 @@ const ContactSection = () => {
                     <Input
                       type="text"
                       name="name"
-                      placeholder="Your Name"
+                      placeholder="Adınız Soyadınız"
                       value={formData.name}
                       onChange={handleChange}
                       required
@@ -94,7 +94,7 @@ const ContactSection = () => {
                     <Input
                       type="text"
                       name="tiktokUsername"
-                      placeholder="TikTok Username"
+                      placeholder="TikTok Kullanıcı Adı"
                       value={formData.tiktokUsername}
                       onChange={handleChange}
                       required
@@ -108,7 +108,7 @@ const ContactSection = () => {
                     <Input
                       type="tel"
                       name="phone"
-                      placeholder="Phone Number"
+                      placeholder="Telefon Numarası"
                       value={formData.phone}
                       onChange={handleChange}
                       required
@@ -119,7 +119,7 @@ const ContactSection = () => {
                     <Input
                       type="email"
                       name="email"
-                      placeholder="Email Address"
+                      placeholder="E-posta Adresi"
                       value={formData.email}
                       onChange={handleChange}
                       required
@@ -130,7 +130,7 @@ const ContactSection = () => {
 
                 <Textarea
                   name="message"
-                  placeholder="Tell us about your streaming experience..."
+                  placeholder="Yayın deneyiminiz hakkında bilgi verin..."
                   value={formData.message}
                   onChange={handleChange}
                   rows={4}
@@ -138,7 +138,7 @@ const ContactSection = () => {
                 />
 
                 <Button type="submit" variant="neon" size="xl" className="w-full group">
-                  Submit Application
+                  Başvuru Gönder
                   <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                 </Button>
               </form>

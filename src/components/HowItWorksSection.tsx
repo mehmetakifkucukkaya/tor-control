@@ -3,32 +3,32 @@ import { ClipboardCheck, ShieldCheck, Users, Target, Rocket } from "lucide-react
 const steps = [
   {
     icon: ClipboardCheck,
-    title: "Apply",
-    description: "Fill out our simple application form with your TikTok details.",
+    title: "Başvur",
+    description: "TikTok bilgilerinizle basit başvuru formumuzu doldurun.",
     color: "cyan",
   },
   {
     icon: ShieldCheck,
-    title: "Verification",
-    description: "Our team reviews your profile and streaming history.",
+    title: "Doğrulama",
+    description: "Ekibimiz profilinizi ve yayın geçmişinizi inceler.",
     color: "purple",
   },
   {
     icon: Users,
-    title: "Meet Your Manager",
-    description: "Get assigned a dedicated support manager for personalized guidance.",
+    title: "Yöneticinle Tanış",
+    description: "Kişiselleştirilmiş rehberlik için size özel bir destek yöneticisi atanır.",
     color: "magenta",
   },
   {
     icon: Target,
-    title: "Set Goals",
-    description: "Work with your manager to create achievable weekly targets.",
+    title: "Hedef Belirle",
+    description: "Yöneticinizle birlikte ulaşılabilir haftalık hedefler oluşturun.",
     color: "pink",
   },
   {
     icon: Rocket,
-    title: "Start Earning More",
-    description: "Launch your optimized streaming career and watch your earnings grow.",
+    title: "Daha Fazla Kazanmaya Başla",
+    description: "Optimize edilmiş yayın kariyerinizi başlatın ve kazançlarınızın artmasını izleyin.",
     color: "cyan",
   },
 ];
@@ -51,11 +51,11 @@ const HowItWorksSection = () => {
         {/* Section header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            How It{" "}
-            <span className="text-neon-magenta neon-text">Works</span>
+            Nasıl{" "}
+            <span className="text-neon-magenta neon-text">Çalışır</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Getting started is easy. Follow these simple steps to join our community of successful streamers.
+            Başlamak çok kolay. Başarılı yayıncılar topluluğumuza katılmak için bu basit adımları takip edin.
           </p>
         </div>
 

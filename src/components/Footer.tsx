@@ -10,28 +10,28 @@ const Footer = () => {
             <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center">
               <Sparkles className="w-5 h-5 text-foreground" />
             </div>
-            <span className="font-display font-bold text-xl">TikTok Live Agency</span>
+            <span className="font-display font-bold text-xl">Tor Connector</span>
           </div>
 
           {/* Links */}
           <div className="flex flex-wrap items-center justify-center gap-6 text-sm">
             <a href="#apply" className="text-muted-foreground hover:text-neon-cyan transition-colors">
-              Apply
+              Başvur
             </a>
             <a href="#" className="text-muted-foreground hover:text-neon-cyan transition-colors">
-              Contact
+              İletişim
             </a>
             <a href="#" className="text-muted-foreground hover:text-neon-cyan transition-colors">
-              Privacy Policy
+              Gizlilik Politikası
             </a>
             <a href="#" className="text-muted-foreground hover:text-neon-cyan transition-colors">
-              Terms of Service
+              Kullanım Koşulları
             </a>
           </div>
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 TikTok Live Agency. All rights reserved.
+            © 2025 Tor Connector. Tüm hakları saklıdır.
           </p>
         </div>
       </div>
