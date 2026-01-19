@@ -1,10 +1,16 @@
 import { TrendingUp, Clock, DollarSign, Gift, Target } from "lucide-react";
+import sectionBg from "@/assets/section-bg.jpg";
 
 const PerformanceShowcase = () => {
   return (
     <section className="py-24 relative overflow-hidden">
-      {/* Background gradient */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/20 to-background" />
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: `url(${sectionBg})` }}
+      />
+      {/* Background gradient overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/80 to-background" />
       
       {/* Glow effects */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-neon-purple/10 rounded-full blur-3xl" />
