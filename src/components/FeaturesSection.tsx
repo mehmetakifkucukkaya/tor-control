@@ -1,5 +1,6 @@
 import { BarChart3, DollarSign, Target, HeadphonesIcon, Coins } from "lucide-react";
 import featuresBg from "@/assets/features-bg.jpg";
+import tiktokFeatures from "@/assets/tiktok-features.png";
 
 const features = [
   {
@@ -75,15 +76,32 @@ const FeaturesSection = () => {
       </div>
 
       <div className="container relative z-10 px-4">
-        {/* Section header */}
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Neler{" "}
-            <span className="gradient-text">Sunuyoruz</span>
-          </h2>
-          <p className="text-lg text-muted-foreground">
-            TikTok Live yayıncısı olarak başarılı olmanız için ihtiyacınız olan her şey, tek bir platformda.
-          </p>
+        {/* Section header with image */}
+        <div className="grid lg:grid-cols-2 gap-12 items-center max-w-6xl mx-auto mb-16">
+          {/* Left - TikTok image */}
+          <div className="relative order-2 lg:order-1">
+            <div className="relative">
+              {/* Glow effect behind image */}
+              <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 via-neon-purple/20 to-neon-magenta/20 blur-3xl scale-110" />
+              <img 
+                src={tiktokFeatures} 
+                alt="TikTok Live Streaming" 
+                className="relative z-10 w-full max-w-md mx-auto drop-shadow-[0_0_30px_rgba(0,228,255,0.3)] hover:scale-105 transition-transform duration-500"
+              />
+            </div>
+          </div>
+          
+          {/* Right - Text content */}
+          <div className="text-center lg:text-left order-1 lg:order-2">
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
+              Neler{" "}
+              <span className="gradient-text">Sunuyoruz</span>
+            </h2>
+            <p className="text-lg text-muted-foreground">
+              TikTok Live yayıncısı olarak başarılı olmanız için ihtiyacınız olan her şey, tek bir platformda. 
+              Profesyonel araçlar ve kişiselleştirilmiş destekle kazançlarınızı maksimize edin.
+            </p>
+          </div>
         </div>
 
         {/* Features grid */}
