@@ -1,21 +1,37 @@
+import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
 import { ArrowRight, Sparkles } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
 
 const HeroSection = () => {
+  const videoRef = useRef<HTMLVideoElement>(null);
+
+  useEffect(() => {
+    // Force video to play on mount
+    if (videoRef.current) {
+      videoRef.current.play().catch(() => {
+        // Autoplay was prevented, video will show poster instead
+        console.log("Autoplay prevented by browser");
+      });
+    }
+  }, []);
+
   return (
     <section className="relative min-h-screen flex items-center justify-center overflow-hidden">
       {/* Video background */}
       <video
+        ref={videoRef}
         autoPlay
         loop
         muted
         playsInline
+        preload="auto"
         className="absolute inset-0 w-full h-full object-cover"
         poster={heroBg}
       >
         <source src={heroVideo} type="video/mp4" />
+        Your browser does not support the video tag.
       </video>
       
       {/* Dark overlay for readability */}
