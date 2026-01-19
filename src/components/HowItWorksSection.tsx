@@ -1,4 +1,5 @@
 import { ClipboardCheck, ShieldCheck, Users, Target, Rocket } from "lucide-react";
+import timelineBg from "@/assets/timeline-bg.jpg";
 
 const steps = [
   {
@@ -42,9 +43,16 @@ const colorClasses = {
 
 const HowItWorksSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
-      <div className="absolute inset-0 bg-gradient-to-b from-background via-muted/10 to-background" />
+    <section id="how-it-works" className="py-24 relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
+        style={{ backgroundImage: `url(${timelineBg})` }}
+      />
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      
+      {/* Glow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/5 rounded-full blur-3xl" />
 
       <div className="container relative z-10 px-4">

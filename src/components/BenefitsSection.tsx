@@ -1,4 +1,5 @@
 import { Check } from "lucide-react";
+import benefitsBg from "@/assets/benefits-bg.jpg";
 
 const benefits = [
   {
@@ -29,8 +30,16 @@ const benefits = [
 
 const BenefitsSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
-      {/* Background */}
+    <section id="benefits" className="py-24 relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
+        style={{ backgroundImage: `url(${benefitsBg})` }}
+      />
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-br from-background via-background/85 to-background" />
+      
+      {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-96 h-96 bg-neon-magenta/10 rounded-full blur-3xl" />
         <div className="absolute bottom-0 left-0 w-96 h-96 bg-neon-cyan/10 rounded-full blur-3xl" />

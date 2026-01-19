@@ -1,4 +1,5 @@
 import { BarChart3, DollarSign, Target, HeadphonesIcon, Coins } from "lucide-react";
+import featuresBg from "@/assets/features-bg.jpg";
 
 const features = [
   {
@@ -58,7 +59,15 @@ const colorClasses = {
 
 const FeaturesSection = () => {
   return (
-    <section className="py-24 relative overflow-hidden">
+    <section id="features" className="py-24 relative overflow-hidden">
+      {/* Background image */}
+      <div 
+        className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
+        style={{ backgroundImage: `url(${featuresBg})` }}
+      />
+      {/* Background overlay */}
+      <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
+      
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-1/2 left-0 w-72 h-72 bg-neon-purple/10 rounded-full blur-3xl" />
