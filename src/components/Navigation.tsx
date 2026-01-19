@@ -1,6 +1,7 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X, Sparkles } from "lucide-react";
+import { Menu, X } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -31,10 +32,8 @@ const Navigation = () => {
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
           <a href="/" className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-foreground" />
-            </div>
-            <span className="font-display font-bold text-lg hidden sm:block">Tor Connector</span>
+            <img src={logo} alt="Tor Control Logo" className="h-10 w-auto" />
+            <span className="font-display font-bold text-lg hidden sm:block">Tor Control</span>
           </a>
 
           {/* Desktop navigation */}
