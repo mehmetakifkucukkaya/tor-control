@@ -1,4 +1,4 @@
-import { Sparkles } from "lucide-react";
+import logo from "@/assets/logo.png";
 
 const Footer = () => {
   return (
@@ -7,10 +7,8 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-2">
-            <div className="w-10 h-10 rounded-xl bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center">
-              <Sparkles className="w-5 h-5 text-foreground" />
-            </div>
-            <span className="font-display font-bold text-xl">Tor Connector</span>
+            <img src={logo} alt="Tor Control Logo" className="h-10 w-auto" />
+            <span className="font-display font-bold text-xl">Tor Control</span>
           </div>
 
           {/* Links */}
@@ -31,7 +29,7 @@ const Footer = () => {
 
           {/* Copyright */}
           <p className="text-sm text-muted-foreground">
-            © 2025 Tor Connector. Tüm hakları saklıdır.
+            © 2025 Tor Control. Tüm hakları saklıdır.
           </p>
         </div>
       </div>

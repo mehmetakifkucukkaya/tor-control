@@ -28,7 +28,7 @@ const HeroSection = () => {
           <div className="text-center lg:text-left space-y-8">
             <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-neon-purple/30 opacity-0 animate-fade-in-up">
               <Sparkles className="w-4 h-4 text-neon-cyan" />
-              <span className="text-sm text-muted-foreground">Tor Connector</span>
+              <span className="text-sm text-muted-foreground">Tor Control</span>
             </div>
 
             <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
