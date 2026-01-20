@@ -36,10 +36,10 @@ const steps = [
 ];
 
 const colorClasses = {
-  cyan: "from-neon-cyan to-neon-cyan/50 text-neon-cyan",
-  purple: "from-neon-purple to-neon-purple/50 text-neon-purple",
-  magenta: "from-neon-magenta to-neon-magenta/50 text-neon-magenta",
-  pink: "from-neon-pink to-neon-pink/50 text-neon-pink",
+  cyan: "from-neon-cyan/20 to-neon-cyan/5 text-neon-cyan border-neon-cyan/30",
+  purple: "from-neon-purple/20 to-neon-purple/5 text-neon-purple border-neon-purple/30",
+  magenta: "from-neon-magenta/20 to-neon-magenta/5 text-neon-magenta border-neon-magenta/30",
+  pink: "from-neon-pink/20 to-neon-pink/5 text-neon-pink border-neon-pink/30",
 };
 
 const HowItWorksSection = () => {
@@ -87,20 +87,30 @@ const HowItWorksSection = () => {
                   >
                     <div className="relative group">
                       {/* Step card */}
-                      <div className="glass-card p-6 rounded-2xl text-center transition-all duration-500 hover:scale-105 hover:glow-purple border border-border/50 hover:border-neon-purple/50">
-                        {/* Step number */}
-                        <div className="absolute -top-3 left-1/2 -translate-x-1/2 w-8 h-8 rounded-full bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center text-sm font-bold z-10">
-                          {index + 1}
+                      <div className="relative glass-card p-6 rounded-3xl text-center transition-all duration-500 hover:scale-105 border border-border/30 hover:border-neon-purple/50 backdrop-blur-xl overflow-hidden">
+                        {/* Gradient background glow */}
+                        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`} />
+                        
+                        {/* Step number badge */}
+                        <div className="absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                          <div className="relative">
+                            <div className="absolute inset-0 bg-gradient-to-br from-neon-purple to-neon-magenta rounded-full blur-md opacity-50" />
+                            <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center text-sm font-bold shadow-lg border border-white/20">
+                              {index + 1}
+                            </div>
+                          </div>
                         </div>
 
-                        {/* Icon */}
-                        <div className={`w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${gradient} bg-opacity-20 flex items-center justify-center mt-4`}>
-                          <Icon className="w-8 h-8" />
+                        {/* Icon container with modern styling */}
+                        <div className={`relative w-20 h-20 mx-auto mb-5 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mt-6 border group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                          <div className="absolute inset-1 rounded-xl bg-background/80 flex items-center justify-center">
+                            <Icon className="w-9 h-9" />
+                          </div>
                         </div>
 
                         {/* Content */}
-                        <h3 className="font-display font-semibold text-lg mb-2">{step.title}</h3>
-                        <p className="text-sm text-muted-foreground">{step.description}</p>
+                        <h3 className="font-display font-semibold text-lg mb-2 relative z-10">{step.title}</h3>
+                        <p className="text-sm text-muted-foreground relative z-10">{step.description}</p>
                       </div>
 
                       {/* Arrow connector (mobile/tablet) */}

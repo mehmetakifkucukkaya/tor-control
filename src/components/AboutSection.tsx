@@ -56,7 +56,7 @@ const AboutSection = () => {
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
                   <span className="text-neon-cyan font-semibold">Tor Control</span>, Türkiye'nin önde gelen TikTok Live 
-                  yayıncı ajansıdır. 2022'den bu yana yüzlerce içerik üreticisinin dijital kariyerlerini 
+                  yayıncı ajansıdır. Yüzlerce içerik üreticisinin dijital kariyerlerini 
                   şekillendirmelerine yardımcı oluyoruz.
                 </p>
                 <p>
@@ -73,8 +73,8 @@ const AboutSection = () => {
               {/* Quick stats */}
               <div className="grid grid-cols-3 gap-4 pt-4">
                 <div className="text-center glass-card p-4 rounded-xl">
-                  <p className="text-2xl font-display font-bold text-neon-cyan">2022</p>
-                  <p className="text-sm text-muted-foreground">Kuruluş Yılı</p>
+                  <p className="text-2xl font-display font-bold text-neon-cyan">500+</p>
+                  <p className="text-sm text-muted-foreground">Aktif Yayıncı</p>
                 </div>
                 <div className="text-center glass-card p-4 rounded-xl">
                   <p className="text-2xl font-display font-bold text-neon-magenta">15+</p>
