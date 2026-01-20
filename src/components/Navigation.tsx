@@ -1,7 +1,9 @@
 import { useState, useEffect } from "react";
 import { Button } from "@/components/ui/button";
-import { Menu, X } from "lucide-react";
+import { Menu, X, Home, Star, Gift, Users, TrendingUp, ArrowRight } from "lucide-react";
 import logo from "@/assets/logo.png";
+
+const PANEL_URL = "https://play.google.com/store/apps/details?id=com.yearflow.year_flow";
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -16,10 +18,10 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Hizmetler", href: "#features" },
-    { name: "Avantajlar", href: "#benefits" },
-    { name: "Nasıl Başvurulur", href: "#how-it-works" },
-    { name: "Yorumlar", href: "#testimonials" },
+    { name: "Ana Sayfa", href: "#", icon: Home, color: "bg-neon-magenta" },
+    { name: "Avantajlar", href: "#benefits", icon: Star, color: "bg-yellow-500" },
+    { name: "Destekler", href: "#features", icon: Gift, color: "bg-rose-500" },
+    { name: "Yayıncılar", href: "#testimonials", icon: Users, color: "bg-orange-500" },
   ];
 
   return (
@@ -84,20 +86,77 @@ const Navigation = () => {
 
         {/* Mobile menu */}
         {isMobileMenuOpen && (
-          <div className="md:hidden glass-card rounded-2xl p-6 mb-4 animate-fade-in-up">
-            <div className="space-y-4">
-              {navLinks.map((link) => (
+          <div className="md:hidden fixed inset-0 top-16 bg-background/95 backdrop-blur-xl z-40 animate-fade-in overflow-y-auto">
+            <div className="container px-4 py-6">
+              {/* Navigation Links */}
+              <div className="space-y-2 mb-6">
+                {navLinks.map((link) => {
+                  const Icon = link.icon;
+                  return (
+                    <a
+                      key={link.name}
+                      href={link.href}
+                      className="flex items-center gap-4 p-3 rounded-xl hover:bg-muted/50 transition-colors"
+                      onClick={() => setIsMobileMenuOpen(false)}
+                    >
+                      <div className={`w-10 h-10 ${link.color} rounded-xl flex items-center justify-center`}>
+                        <Icon className="w-5 h-5 text-white" />
+                      </div>
+                      <span className="text-lg font-medium">{link.name}</span>
+                    </a>
+                  );
+                })}
+              </div>
+
+              {/* Divider */}
+              <div className="flex items-center gap-3 mb-4">
+                <span className="text-xs font-semibold text-muted-foreground tracking-wider">KURUMSAL</span>
+                <div className="flex-1 h-px bg-border/50" />
+              </div>
+
+              {/* Corporate Links */}
+              <div className="space-y-2 mb-8">
                 <a
-                  key={link.name}
-                  href={link.href}
-                  className="block text-lg text-muted-foreground hover:text-foreground transition-colors"
+                  href="#how-it-works"
+                  className="flex items-center gap-4 p-3 rounded-xl hover:bg-muted/50 transition-colors"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
-                  {link.name}
+                  <div className="w-10 h-10 bg-neon-cyan/20 rounded-xl flex items-center justify-center">
+                    <TrendingUp className="w-5 h-5 text-neon-cyan" />
+                  </div>
+                  <span className="text-lg font-medium">Nasıl Başvurulur</span>
                 </a>
-              ))}
-              <hr className="border-border/30" />
-              <div className="flex flex-col gap-3 pt-2">
+              </div>
+
+              {/* Panel Card - Bottom */}
+              <a
+                href={PANEL_URL}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="block glass-card neon-border p-4 rounded-2xl hover:scale-[1.02] transition-transform"
+                onClick={() => setIsMobileMenuOpen(false)}
+              >
+                <div className="flex items-center justify-between">
+                  <div className="flex items-center gap-4">
+                    <div className="w-12 h-12 bg-gradient-to-br from-neon-cyan/20 to-neon-magenta/20 rounded-xl flex items-center justify-center">
+                      <TrendingUp className="w-6 h-6 text-neon-cyan" />
+                    </div>
+                    <div>
+                      <div className="flex items-center gap-2">
+                        <span className="font-bold text-lg">Tor Control Panel</span>
+                        <span className="px-2 py-0.5 bg-neon-cyan/20 text-neon-cyan text-xs font-bold rounded-full">
+                          YENİ
+                        </span>
+                      </div>
+                      <p className="text-sm text-muted-foreground">Yayıncı Yönetim Paneli</p>
+                    </div>
+                  </div>
+                  <ArrowRight className="w-5 h-5 text-neon-cyan" />
+                </div>
+              </a>
+
+              {/* Apply Button */}
+              <div className="mt-6">
                 <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="neon" size="lg" className="w-full">
                     Hemen Başvur

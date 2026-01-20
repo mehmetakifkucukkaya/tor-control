@@ -16,9 +16,11 @@ const colorClasses = {
   pink: "text-neon-pink",
 };
 
+const PANEL_URL = "https://play.google.com/store/apps/details?id=com.yearflow.year_flow";
+
 const PerformanceShowcase = () => {
-  const scrollToApply = () => {
-    document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' });
+  const openPanel = () => {
+    window.open(PANEL_URL, '_blank', 'noopener,noreferrer');
   };
 
   return (
@@ -56,8 +58,8 @@ const PerformanceShowcase = () => {
                     Gerçek zamanlı performans takibi ve kazanç analizi
                   </p>
                 </div>
-                <Button variant="neon" size="sm" onClick={scrollToApply} className="group">
-                  Panele Eriş
+                <Button variant="neon" size="sm" onClick={openPanel} className="group">
+                  Panele Erişin
                   <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
                 </Button>
               </div>
