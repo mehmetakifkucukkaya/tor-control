@@ -20,7 +20,7 @@ const PANEL_URL = "https://play.google.com/store/apps/details?id=com.yearflow.ye
 
 const PerformanceShowcase = () => {
   const openPanel = () => {
-    window.open(PANEL_URL, '_blank', 'noopener,noreferrer');
+    window.open(PANEL_URL, "_blank", "noopener,noreferrer");
   };
 
   return (
@@ -36,12 +36,11 @@ const PerformanceShowcase = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimationWrapper animation="fade-up" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Yayıncı{" "}
-              <span className="gradient-text">Paneli</span>
+              Yayıncı <span className="gradient-text">Paneli</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tor Control ile çalışan yayıncılar, özel yayıncı panelimiz üzerinden 
-              tüm istatistiklerini, kazançlarını ve desteklerini takip edebilir.
+              Tor Control ile çalışan yayıncılar, özel yayıncı panelimiz üzerinden tüm istatistiklerini, kazançlarını ve
+              desteklerini takip edebilir.
             </p>
           </ScrollAnimationWrapper>
 
@@ -51,12 +50,8 @@ const PerformanceShowcase = () => {
               {/* Header */}
               <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
                 <div>
-                  <h3 className="text-xl md:text-2xl font-display font-bold mb-2">
-                    Yayıncı Dashboard
-                  </h3>
-                  <p className="text-muted-foreground text-sm">
-                    Gerçek zamanlı performans takibi ve kazanç analizi
-                  </p>
+                  <h3 className="text-xl md:text-2xl font-display font-bold mb-2">Tor Control</h3>
+                  <p className="text-muted-foreground text-sm">Gerçek zamanlı performans takibi ve kazanç analizi</p>
                 </div>
                 <Button variant="neon" size="sm" onClick={openPanel} className="group">
                   Panele Erişin
@@ -69,16 +64,14 @@ const PerformanceShowcase = () => {
                 {stats.map((stat, index) => {
                   const Icon = stat.icon;
                   const colorClass = colorClasses[stat.color as keyof typeof colorClasses];
-                  
+
                   return (
                     <div
                       key={index}
                       className="glass-card p-4 md:p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
                     >
                       <Icon className={`w-8 h-8 ${colorClass} mx-auto mb-3`} />
-                      <p className={`text-2xl md:text-3xl font-display font-bold ${colorClass} mb-1`}>
-                        {stat.value}
-                      </p>
+                      <p className={`text-2xl md:text-3xl font-display font-bold ${colorClass} mb-1`}>{stat.value}</p>
                       <p className="text-xs md:text-sm text-muted-foreground">{stat.label}</p>
                     </div>
                   );
