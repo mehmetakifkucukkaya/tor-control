@@ -16,10 +16,9 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Hakkımızda", href: "#about" },
     { name: "Hizmetler", href: "#features" },
-    { name: "Portfolyo", href: "#portfolio" },
     { name: "Avantajlar", href: "#benefits" },
+    { name: "Nasıl Başvurulur", href: "#how-it-works" },
     { name: "Yorumlar", href: "#testimonials" },
   ];
 
@@ -35,11 +34,16 @@ const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="absolute inset-0 bg-neon-cyan/20 rounded-xl blur-md group-hover:bg-neon-cyan/30 transition-all duration-300" />
-              <img src={logo} alt="Tormedya Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
+              <img src={logo} alt="Tor Ajans Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
             </div>
-            <span className="font-display font-bold text-xl hidden sm:block bg-gradient-to-r from-foreground via-neon-cyan to-foreground bg-clip-text text-transparent bg-[length:200%_100%] group-hover:animate-shimmer">
-              Tormedya
-            </span>
+            <div className="hidden sm:flex flex-col">
+              <span className="font-display font-bold text-xl bg-gradient-to-r from-neon-cyan to-foreground bg-clip-text text-transparent">
+                TOR
+              </span>
+              <span className="font-display font-bold text-sm text-neon-magenta -mt-1">
+                AJANS
+              </span>
+            </div>
           </a>
 
           {/* Desktop navigation */}
@@ -59,13 +63,8 @@ const Navigation = () => {
           {/* CTA buttons */}
           <div className="hidden md:flex items-center gap-4">
             <a href="#apply">
-              <Button variant="ghost" size="sm">
-                İletişim
-              </Button>
-            </a>
-            <a href="#apply">
               <Button variant="neon" size="sm">
-                Teklif Al
+                Başvur
               </Button>
             </a>
           </div>
@@ -100,13 +99,8 @@ const Navigation = () => {
               <hr className="border-border/30" />
               <div className="flex flex-col gap-3 pt-2">
                 <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
-                  <Button variant="neon-outline" size="lg" className="w-full">
-                    İletişim
-                  </Button>
-                </a>
-                <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="neon" size="lg" className="w-full">
-                    Teklif Al
+                    Hemen Başvur
                   </Button>
                 </a>
               </div>

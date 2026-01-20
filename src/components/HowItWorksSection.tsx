@@ -1,36 +1,36 @@
-import { ClipboardCheck, ShieldCheck, Users, Target, Rocket } from "lucide-react";
+import { UserPlus, MousePointer, FileText, Search, Mail } from "lucide-react";
 import timelineBg from "@/assets/timeline-bg.jpg";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const steps = [
   {
-    icon: ClipboardCheck,
-    title: "Başvur",
-    description: "TikTok bilgilerinizle basit başvuru formumuzu doldurun.",
+    icon: UserPlus,
+    title: "Profil Gir",
+    description: "Tor Ajans profiline gir.",
     color: "cyan",
   },
   {
-    icon: ShieldCheck,
-    title: "Doğrulama",
-    description: "Ekibimiz profilinizi ve yayın geçmişinizi inceler.",
+    icon: MousePointer,
+    title: "Başvur Tıkla",
+    description: "'Başvur' butonuna tıkla.",
     color: "purple",
   },
   {
-    icon: Users,
-    title: "Yöneticinle Tanış",
-    description: "Kişiselleştirilmiş rehberlik için size özel bir destek yöneticisi atanır.",
+    icon: FileText,
+    title: "Bilgi Doldur",
+    description: "Bilgilerini eksiksiz doldur.",
     color: "magenta",
   },
   {
-    icon: Target,
-    title: "Hedef Belirle",
-    description: "Yöneticinizle birlikte ulaşılabilir haftalık hedefler oluşturun.",
+    icon: Search,
+    title: "Değerlendirme",
+    description: "Başvurunu inceliyoruz.",
     color: "pink",
   },
   {
-    icon: Rocket,
-    title: "Daha Fazla Kazanmaya Başla",
-    description: "Optimize edilmiş yayın kariyerinizi başlatın ve kazançlarınızın artmasını izleyin.",
+    icon: Mail,
+    title: "Davet Al",
+    description: "Uygun görülürsen davet alırsın.",
     color: "cyan",
   },
 ];
@@ -61,10 +61,13 @@ const HowItWorksSection = () => {
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
             Nasıl{" "}
-            <span className="text-neon-magenta neon-text">Çalışır</span>
+            <span className="text-neon-magenta neon-text">Başvurursun?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Başlamak çok kolay. Başarılı yayıncılar topluluğumuza katılmak için bu basit adımları takip edin.
+            Tor Ajans ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
+          </p>
+          <p className="text-sm text-muted-foreground mt-4 italic">
+            "Birlikte uyumlu çalışabileceğimiz yayıncıları seçiyoruz."
           </p>
         </ScrollAnimationWrapper>
 

@@ -1,43 +1,43 @@
-import { Video, Users, Share2, BarChart3, Globe, Lightbulb } from "lucide-react";
+import { Gamepad2, Coins, GraduationCap, Monitor, Users, Headphones } from "lucide-react";
 import featuresBg from "@/assets/features-bg.jpg";
 import tiktokFeatures from "@/assets/tiktok-features.png";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
   {
-    icon: Video,
-    title: "TikTok İçerik Üretimi",
-    description: "Reels, trend videolar ve challenge katılımlarıyla viral içerikler oluşturuyoruz.",
+    icon: Gamepad2,
+    title: "Ekipman Destekleri",
+    description: "Gaming chair, ring light, mikrofon ve profesyonel yayın set-up'ı ile donatıyoruz.",
     color: "cyan",
   },
   {
-    icon: Users,
-    title: "Influencer Marketing",
-    description: "Micro ve macro influencer iş birlikleriyle markanızı doğru kitleye ulaştırıyoruz.",
+    icon: Coins,
+    title: "Jeton ve Hediye Bonusları",
+    description: "Kotalara göre jeton desteği, hediye bonusları ve performansa göre primler sunuyoruz.",
     color: "magenta",
   },
   {
-    icon: Share2,
-    title: "Sosyal Medya Yönetimi",
-    description: "TikTok, Instagram, Facebook ve LinkedIn hesaplarınızı profesyonelce yönetiyoruz.",
+    icon: GraduationCap,
+    title: "Eğitim ve Strateji",
+    description: "CANLI yayın eğitimleri, büyüme stratejileri ve yayıncıya özel yönlendirme.",
     color: "purple",
   },
   {
-    icon: BarChart3,
-    title: "Reklam Yönetimi",
-    description: "Meta Ads, TikTok Ads ve Google Ads ile hedef kitlenize ulaşın.",
+    icon: Monitor,
+    title: "Profesyonel Yayın Desteği",
+    description: "Teknik destek, yayın optimizasyonu ve içerik danışmanlığı hizmetleri.",
     color: "pink",
   },
   {
-    icon: Globe,
-    title: "SEO & Web Tasarım",
-    description: "Kurumsal web sitesi tasarımı ve arama motoru optimizasyonu hizmetleri.",
+    icon: Users,
+    title: "Topluluk ve Aidiyet",
+    description: "Tor Ajans ailesi ile moral desteği ve güçlü bir topluluk deneyimi.",
     color: "cyan",
   },
   {
-    icon: Lightbulb,
-    title: "Branding & Strateji",
-    description: "Marka kimliği oluşturma ve dijital strateji danışmanlığı sunuyoruz.",
+    icon: Headphones,
+    title: "Günlük Birebir Destek",
+    description: "Günlük birebir ajans desteği, sürekli takip ve profesyonel yönlendirme.",
     color: "magenta",
   },
 ];
@@ -92,7 +92,7 @@ const FeaturesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 via-neon-purple/20 to-neon-magenta/20 blur-3xl scale-110" />
               <img 
                 src={tiktokFeatures} 
-                alt="TikTok & Sosyal Medya Hizmetleri" 
+                alt="TikTok LIVE Yayıncı Destekleri" 
                 className="relative z-10 w-full max-w-md mx-auto drop-shadow-[0_0_30px_rgba(0,228,255,0.3)] hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -101,13 +101,12 @@ const FeaturesSection = () => {
           {/* Right - Text content */}
           <ScrollAnimationWrapper animation="fade-left" className="text-center lg:text-left order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Sunduğumuz{" "}
-              <span className="gradient-text">Hizmetler</span>
+              Sağladığımız{" "}
+              <span className="gradient-text">Destekler</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Dijital dünyanın tüm ihtiyaçlarına yanıt veriyoruz. TikTok içerik üretiminden 
-              influencer marketinge, sosyal medya yönetiminden reklam kampanyalarına kadar 
-              markanızı büyütmek için buradayız.
+              TikTok LIVE yayıncılarına kapsamlı destek sunuyoruz. Ekipmandan eğitime, 
+              jeton bonusundan topluluk desteğine kadar her alanda yanındayız.
             </p>
           </ScrollAnimationWrapper>
         </div>
