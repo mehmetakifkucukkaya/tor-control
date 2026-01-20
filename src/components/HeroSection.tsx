@@ -73,9 +73,9 @@ const HeroSection = () => {
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
             TikTok Live'da{" "}
-            <span className="gradient-text">Kariyer Yap.</span>
+            <span className="gradient-text">Kariyerini</span>
             <br />
-            <span className="text-neon-cyan neon-text">Profesyonel Ajans</span> Desteğiyle.
+            <span className="text-neon-cyan neon-text">Zirveye</span> Taşıyalım.
           </h1>
 
           {/* Description */}
@@ -114,7 +114,7 @@ const HeroSection = () => {
 
           {/* Social proof text */}
           <p className="text-sm text-muted-foreground opacity-0 animate-fade-in-up animate-delay-500">
-            ⭐ Türkiye genelinde güvenilen ajans • Şeffaf süreçler • Zamanında ödeme garantisi
+            ⭐ Türkiye genelinde güvenilen ajans • Şeffaf süreçler • Profesyonel destek
           </p>
         </div>
       </div>
