@@ -31,7 +31,7 @@ const features = [
   {
     icon: Users,
     title: "Topluluk ve Aidiyet",
-    description: "Tor Ajans ailesi ile moral desteği ve güçlü bir topluluk deneyimi.",
+    description: "Tor Control ailesi ile moral desteği ve güçlü bir topluluk deneyimi.",
     color: "cyan",
   },
   {

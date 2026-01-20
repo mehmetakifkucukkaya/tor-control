@@ -4,6 +4,7 @@ import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
 import HowItWorksSection from "@/components/HowItWorksSection";
 import SocialProofSection from "@/components/SocialProofSection";
+import PerformanceShowcase from "@/components/PerformanceShowcase";
 import ContactSection from "@/components/ContactSection";
 import Footer from "@/components/Footer";
 
@@ -25,6 +26,7 @@ const Index = () => {
         <section id="testimonials">
           <SocialProofSection />
         </section>
+        <PerformanceShowcase />
         <ContactSection />
       </main>
       <Footer />

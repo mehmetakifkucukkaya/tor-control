@@ -19,7 +19,7 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Ajans ailesine hoşgeldin!");
+    toast.success("Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Control ailesine hoşgeldin!");
     setFormData({ name: "", tiktokUsername: "", phone: "", followers: "", experience: "", message: "" });
   };
 
@@ -50,7 +50,7 @@ const ContactSection = () => {
                   <div className="space-y-6">
                     <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-neon-cyan/30">
                       <Sparkles className="w-4 h-4 text-neon-cyan" />
-                      <span className="text-sm">Tor Ajans Ailesine Katıl</span>
+                      <span className="text-sm">Tor Control Ailesine Katıl</span>
                     </div>
 
                     <h2 className="text-2xl md:text-3xl lg:text-4xl font-display font-bold">
@@ -61,7 +61,7 @@ const ContactSection = () => {
 
                     <p className="text-muted-foreground">
                       Profesyonel destek, ekipman ve eğitimle büyü. 
-                      Başvuru formunu doldur ve Tor Ajans ailesiyle tanış.
+                      Başvuru formunu doldur ve Tor Control ailesiyle tanış.
                     </p>
 
                     {/* Benefits preview */}
@@ -90,7 +90,7 @@ const ContactSection = () => {
 
                     {/* Social links */}
                     <div className="flex gap-3 pt-4">
-                      <a href="#" className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:scale-110 transition-transform border border-border/50 hover:border-neon-cyan/50">
+                      <a href="https://www.tiktok.com/@tormedya" target="_blank" rel="noopener noreferrer" className="w-10 h-10 rounded-full glass-card flex items-center justify-center hover:scale-110 transition-transform border border-border/50 hover:border-neon-cyan/50">
                         <svg className="w-5 h-5 text-foreground" fill="currentColor" viewBox="0 0 24 24">
                           <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
                         </svg>
