@@ -4,28 +4,28 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const benefits = [
   {
-    title: "Daha Yüksek Aylık Kazanç",
-    description: "Optimize edilmiş yayın stratejilerimiz ve jeton destek programlarımızla gelirinizi maksimuma çıkarın.",
+    title: "Güvenilir Ajans",
+    description: "3 yılı aşkın sektör deneyimimizle güvenilir ve şeffaf bir ajans olarak yanınızdayız.",
   },
   {
-    title: "Haftalık Hedef Desteği",
-    description: "Kişiselleştirilmiş haftalık hedefler ve doğru yolda kalmanıza yardımcı olmak için özel destek.",
-  },
-  {
-    title: "Detaylı Performans Raporları",
-    description: "Performansınızı anlamanız ve geliştirmeniz için kapsamlı analitik ve içgörüler.",
+    title: "Hızlı Ödeme Garantisi",
+    description: "Kazançlarınız düzenli ve zamanında hesabınıza aktarılır. Ödeme takibi derdiniz olmaz.",
   },
   {
     title: "Özel Eğitim Programı",
-    description: "En iyi performans gösteren yayıncılardan premium eğitim içeriklerine ve stratejilere erişim.",
+    description: "Sektörün en başarılı yayıncılarından öğrenme fırsatı ve sürekli gelişim imkanı.",
   },
   {
-    title: "Kişiye Özel Destek Yöneticisi",
-    description: "Yayın yolculuğunuzun her adımında size rehberlik edecek 7/24 kişisel yönetici.",
+    title: "Marka İşbirliği Fırsatları",
+    description: "Profilinize uygun sponsorluk ve reklam anlaşmalarıyla ek gelir kaynakları oluşturun.",
   },
   {
-    title: "Yapılandırılmış Büyüme Programı",
-    description: "Yayın kariyerinizi hızlandırmak için tasarlanmış net yol haritası ve kilometre taşları.",
+    title: "7/24 Destek Ekibi",
+    description: "Herhangi bir sorun yaşadığınızda anında ulaşabileceğiniz profesyonel destek ekibi.",
+  },
+  {
+    title: "Toplu Güç Avantajı",
+    description: "500+ yayıncılık ağımızın gücünden faydalanın, networking ve işbirliği fırsatları yakalayın.",
   },
 ];
 
@@ -52,11 +52,11 @@ const BenefitsSection = () => {
           <ScrollAnimationWrapper animation="fade-right">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
               Neden{" "}
-              <span className="gradient-text">Ajansımıza Katılmalısınız?</span>
+              <span className="gradient-text">Tor Control?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              TikTok Live yayıncılığınızı başarılı bir kariyere dönüştürmeniz için ihtiyacınız olan her şeyi sağlıyoruz. 
-              Bizimle birlikte büyümelerini hızlandıran yüzlerce yayıncıya katılın.
+              Türkiye'nin en güvenilir TikTok Live ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. 
+              Şeffaf süreçler, zamanında ödemeler ve profesyonel destek ile fark yaratıyoruz.
             </p>
 
             {/* Stats */}

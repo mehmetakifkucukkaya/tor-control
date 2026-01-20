@@ -4,32 +4,32 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 const testimonials = [
   {
     name: "Ayşe Yılmaz",
-    role: "TikTok İçerik Üreticisi",
+    role: "Ajans Yayıncısı • 8 Aydır Üye",
     avatar: "AY",
-    content: "Bu ajansa katılmak yayın kariyerim için en iyi karar oldu. Kazançlarım sadece 3 ayda 3 katına çıktı!",
+    content: "Tor Control'e katılmadan önce ayda 2-3 bin TL kazanıyordum. Şimdi düzenli olarak 15 bin üzeri kazanıyorum. Yöneticim sürekli yanımda!",
     rating: 5,
   },
   {
     name: "Mehmet Kaya",
-    role: "Canlı Yayıncı",
+    role: "Ajans Yayıncısı • 1 Yıldır Üye",
     avatar: "MK",
-    content: "Destek ekibi inanılmaz. İçeriğimi optimize etmeme ve kitlemi katlanarak büyütmeme yardımcı oldular.",
+    content: "Ajansın sağladığı marka işbirlikleri sayesinde sadece yayın değil, sponsorluk gelirleri de kazanmaya başladım. Profesyonel bir ekip!",
     rating: 5,
   },
   {
     name: "Zeynep Demir",
-    role: "İçerik Üreticisi",
+    role: "Ajans Yayıncısı • 6 Aydır Üye",
     avatar: "ZD",
-    content: "Profesyonel, destekleyici ve sonuç odaklı. Yayın geleceğim konusunda hiç bu kadar güvende hissetmemiştim.",
+    content: "Diğer ajansları da denedim ama Tor Control gerçekten farklı. Şeffaf, dürüst ve her zaman ulaşılabilir durumdalar.",
     rating: 5,
   },
 ];
 
 const stats = [
   { value: "500+", label: "Aktif Yayıncı", suffix: "" },
-  { value: "₺15M", label: "Aylık Gelir", suffix: "+" },
-  { value: "150%", label: "Ort. Büyüme Oranı", suffix: "" },
-  { value: "98%", label: "Memnuniyet Oranı", suffix: "" },
+  { value: "3", label: "Yıllık Tecrübe", suffix: "+" },
+  { value: "50+", label: "Marka İşbirliği", suffix: "" },
+  { value: "98%", label: "Memnuniyet", suffix: "" },
 ];
 
 const SocialProofSection = () => {
@@ -45,11 +45,11 @@ const SocialProofSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            En İyi Yayıncılar{" "}
-            <span className="gradient-text">Bize Güveniyor</span>
+            Yayıncılarımız{" "}
+            <span className="gradient-text">Ne Diyor?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Bizimle birlikte yayın kariyerlerini dönüştüren başarılı içerik üreticileri topluluğuna katılın.
+            Ajansımıza katılan yayıncıların deneyimlerini ve başarı hikayelerini keşfedin.
           </p>
         </ScrollAnimationWrapper>
 
