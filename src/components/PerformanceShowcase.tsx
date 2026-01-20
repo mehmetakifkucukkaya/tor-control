@@ -20,11 +20,12 @@ const PerformanceShowcase = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Performans{" "}
-            <span className="text-neon-cyan neon-text">Önizleme</span>
+            Yayıncı{" "}
+            <span className="text-neon-cyan neon-text">Panelimiz</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            TikTok Live yayıncıları için tasarlanmış güçlü performans yönetim sistemimize bir göz atın.
+            Ajansımıza katılan yayıncılar, özel performans takip panelimiz ile 
+            kazançlarını ve gelişimlerini anlık olarak takip edebilir.
           </p>
         </ScrollAnimationWrapper>
 

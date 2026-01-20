@@ -21,9 +21,6 @@ const Index = () => {
         <section id="features">
           <FeaturesSection />
         </section>
-        <section id="panel">
-          <PerformanceShowcase />
-        </section>
         <section id="benefits">
           <BenefitsSection />
         </section>
@@ -32,6 +29,9 @@ const Index = () => {
         </section>
         <section id="testimonials">
           <SocialProofSection />
+        </section>
+        <section id="panel">
+          <PerformanceShowcase />
         </section>
         <ContactSection />
       </main>
