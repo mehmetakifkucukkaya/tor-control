@@ -1,29 +1,29 @@
-import { Users, Trophy, Heart, Zap } from "lucide-react";
+import { Lightbulb, Eye, Target, Heart } from "lucide-react";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const values = [
   {
-    icon: Users,
-    title: "Yayıncı Odaklı",
-    description: "Her kararımızı yayıncılarımızın başarısını düşünerek alıyoruz.",
+    icon: Lightbulb,
+    title: "Yaratıcılık",
+    description: "Her projede özgün ve yenilikçi çözümler üretiyoruz.",
     color: "cyan",
   },
   {
-    icon: Trophy,
-    title: "Sonuç Odaklı",
-    description: "Somut sonuçlar ve ölçülebilir büyüme sağlamaya odaklanıyoruz.",
+    icon: Eye,
+    title: "Şeffaflık",
+    description: "Tüm süreçlerimizde açık ve dürüst iletişim kuruyoruz.",
     color: "magenta",
   },
   {
-    icon: Heart,
-    title: "Şeffaflık",
-    description: "Tüm süreçlerimizde açık ve dürüst iletişim kuruyoruz.",
+    icon: Target,
+    title: "Sonuç Odaklılık",
+    description: "Ölçülebilir sonuçlar ve somut büyüme sağlamaya odaklanıyoruz.",
     color: "purple",
   },
   {
-    icon: Zap,
-    title: "Yenilikçilik",
-    description: "Sektördeki en son trendleri takip ederek stratejilerimizi sürekli güncelliyoruz.",
+    icon: Heart,
+    title: "Müşteri Memnuniyeti",
+    description: "Her kararımızı müşterilerimizin başarısını düşünerek alıyoruz.",
     color: "pink",
   },
 ];
@@ -55,34 +55,33 @@ const AboutSection = () => {
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  <span className="text-neon-cyan font-semibold">Tor Control</span>, Türkiye'nin önde gelen TikTok Live 
-                  yayıncı ajansıdır. Yüzlerce içerik üreticisinin dijital kariyerlerini 
-                  şekillendirmelerine yardımcı oluyoruz.
+                  <span className="text-neon-cyan font-semibold">Tormedya</span>, dijital pazarlama 
+                  ve sosyal medya yönetimi alanında uzmanlaşmış bir ajanstır. TikTok ve Instagram 
+                  başta olmak üzere tüm sosyal medya platformlarında markaların büyümesine 
+                  yardımcı oluyoruz.
                 </p>
                 <p>
-                  Deneyimli yönetici kadromuz, sektör bilgisi ve kişiselleştirilmiş stratejilerle 
-                  yayıncılarımızın potansiyellerini maksimuma çıkarmalarını sağlıyoruz.
+                  Deneyimli ekibimizle içerik üretiminden influencer marketinge, reklam yönetiminden 
+                  strateji danışmanlığına kadar geniş bir yelpazede hizmet sunuyoruz.
                 </p>
-                <p>
-                  Sadece kazanç değil, sürdürülebilir bir kariyer inşa etmenize odaklanıyoruz. 
-                  Marka işbirlikleri, içerik stratejisi ve kitle büyütme konularında profesyonel 
-                  destek sunuyoruz.
+                <p className="text-xl font-display font-semibold text-neon-magenta">
+                  "Sizi Cümle Aleme Reklam Ederiz"
                 </p>
               </div>
 
               {/* Quick stats */}
               <div className="grid grid-cols-3 gap-4 pt-4">
                 <div className="text-center glass-card p-4 rounded-xl">
-                  <p className="text-2xl font-display font-bold text-neon-cyan">500+</p>
-                  <p className="text-sm text-muted-foreground">Aktif Yayıncı</p>
+                  <p className="text-2xl font-display font-bold text-neon-cyan">150+</p>
+                  <p className="text-sm text-muted-foreground">Başarılı Proje</p>
                 </div>
                 <div className="text-center glass-card p-4 rounded-xl">
-                  <p className="text-2xl font-display font-bold text-neon-magenta">15+</p>
-                  <p className="text-sm text-muted-foreground">Uzman Kadro</p>
+                  <p className="text-2xl font-display font-bold text-neon-magenta">80+</p>
+                  <p className="text-sm text-muted-foreground">Mutlu Müşteri</p>
                 </div>
                 <div className="text-center glass-card p-4 rounded-xl">
-                  <p className="text-2xl font-display font-bold text-neon-purple">7/24</p>
-                  <p className="text-sm text-muted-foreground">Destek</p>
+                  <p className="text-2xl font-display font-bold text-neon-purple">50M+</p>
+                  <p className="text-sm text-muted-foreground">Toplam Erişim</p>
                 </div>
               </div>
             </div>
@@ -92,7 +91,7 @@ const AboutSection = () => {
           <div className="space-y-4">
             <ScrollAnimationWrapper animation="fade-left">
               <h3 className="text-xl font-display font-semibold mb-6 text-center lg:text-left">
-                Değerlerimiz
+                Ana Değerlerimiz
               </h3>
             </ScrollAnimationWrapper>
             

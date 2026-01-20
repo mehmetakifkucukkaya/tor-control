@@ -18,8 +18,8 @@ const Navigation = () => {
   const navLinks = [
     { name: "Hakkımızda", href: "#about" },
     { name: "Hizmetler", href: "#features" },
+    { name: "Portfolyo", href: "#portfolio" },
     { name: "Avantajlar", href: "#benefits" },
-    { name: "Nasıl Çalışır", href: "#how-it-works" },
     { name: "Yorumlar", href: "#testimonials" },
   ];
 
@@ -35,10 +35,10 @@ const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="absolute inset-0 bg-neon-cyan/20 rounded-xl blur-md group-hover:bg-neon-cyan/30 transition-all duration-300" />
-              <img src={logo} alt="Tor Control Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
+              <img src={logo} alt="Tormedya Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
             </div>
             <span className="font-display font-bold text-xl hidden sm:block bg-gradient-to-r from-foreground via-neon-cyan to-foreground bg-clip-text text-transparent bg-[length:200%_100%] group-hover:animate-shimmer">
-              Tor Control
+              Tormedya
             </span>
           </a>
 
@@ -65,7 +65,7 @@ const Navigation = () => {
             </a>
             <a href="#apply">
               <Button variant="neon" size="sm">
-                Hemen Başvur
+                Teklif Al
               </Button>
             </a>
           </div>
@@ -106,7 +106,7 @@ const Navigation = () => {
                 </a>
                 <a href="#apply" onClick={() => setIsMobileMenuOpen(false)}>
                   <Button variant="neon" size="lg" className="w-full">
-                    Hemen Başvur
+                    Teklif Al
                   </Button>
                 </a>
               </div>

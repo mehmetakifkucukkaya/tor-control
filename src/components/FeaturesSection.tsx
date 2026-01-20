@@ -1,38 +1,44 @@
-import { BarChart3, DollarSign, Target, HeadphonesIcon, Coins } from "lucide-react";
+import { Video, Users, Share2, BarChart3, Globe, Lightbulb } from "lucide-react";
 import featuresBg from "@/assets/features-bg.jpg";
 import tiktokFeatures from "@/assets/tiktok-features.png";
 import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const features = [
   {
-    icon: BarChart3,
-    title: "Yayıncı Geliştirme",
-    description: "Kişiselleştirilmiş koçluk ve eğitim programlarıyla yayın becerilerinizi profesyonel seviyeye taşıyoruz.",
+    icon: Video,
+    title: "TikTok İçerik Üretimi",
+    description: "Reels, trend videolar ve challenge katılımlarıyla viral içerikler oluşturuyoruz.",
     color: "cyan",
   },
   {
-    icon: DollarSign,
-    title: "Gelir Optimizasyonu",
-    description: "Stratejik yayın planlaması ve izleyici etkileşimi teknikleriyle kazançlarınızı maksimize ediyoruz.",
+    icon: Users,
+    title: "Influencer Marketing",
+    description: "Micro ve macro influencer iş birlikleriyle markanızı doğru kitleye ulaştırıyoruz.",
     color: "magenta",
   },
   {
-    icon: Target,
-    title: "Marka İşbirlikleri",
-    description: "Profilinize uygun markalarla sponsorluk ve işbirliği fırsatları oluşturuyoruz.",
+    icon: Share2,
+    title: "Sosyal Medya Yönetimi",
+    description: "TikTok, Instagram, Facebook ve LinkedIn hesaplarınızı profesyonelce yönetiyoruz.",
     color: "purple",
   },
   {
-    icon: HeadphonesIcon,
-    title: "Kişisel Yönetici",
-    description: "Her yayıncımıza özel atanan yöneticiler, kariyerinizin her aşamasında yanınızda.",
+    icon: BarChart3,
+    title: "Reklam Yönetimi",
+    description: "Meta Ads, TikTok Ads ve Google Ads ile hedef kitlenize ulaşın.",
     color: "pink",
   },
   {
-    icon: Coins,
-    title: "Topluluk Desteği",
-    description: "Diğer başarılı yayıncılarla networking ve deneyim paylaşımı fırsatları sunuyoruz.",
+    icon: Globe,
+    title: "SEO & Web Tasarım",
+    description: "Kurumsal web sitesi tasarımı ve arama motoru optimizasyonu hizmetleri.",
     color: "cyan",
+  },
+  {
+    icon: Lightbulb,
+    title: "Branding & Strateji",
+    description: "Marka kimliği oluşturma ve dijital strateji danışmanlığı sunuyoruz.",
+    color: "magenta",
   },
 ];
 
@@ -86,7 +92,7 @@ const FeaturesSection = () => {
               <div className="absolute inset-0 bg-gradient-to-r from-neon-cyan/20 via-neon-purple/20 to-neon-magenta/20 blur-3xl scale-110" />
               <img 
                 src={tiktokFeatures} 
-                alt="TikTok Live Streaming" 
+                alt="TikTok & Sosyal Medya Hizmetleri" 
                 className="relative z-10 w-full max-w-md mx-auto drop-shadow-[0_0_30px_rgba(0,228,255,0.3)] hover:scale-105 transition-transform duration-500"
               />
             </div>
@@ -95,12 +101,13 @@ const FeaturesSection = () => {
           {/* Right - Text content */}
           <ScrollAnimationWrapper animation="fade-left" className="text-center lg:text-left order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Ajans{" "}
-              <span className="gradient-text">Hizmetlerimiz</span>
+              Sunduğumuz{" "}
+              <span className="gradient-text">Hizmetler</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Yayıncılarımızın başarısı için kapsamlı hizmetler sunuyoruz. Kariyer planlamasından 
-              marka işbirliklerine, eğitimden topluluk desteğine kadar her alanda yanınızdayız.
+              Dijital dünyanın tüm ihtiyaçlarına yanıt veriyoruz. TikTok içerik üretiminden 
+              influencer marketinge, sosyal medya yönetiminden reklam kampanyalarına kadar 
+              markanızı büyütmek için buradayız.
             </p>
           </ScrollAnimationWrapper>
         </div>
