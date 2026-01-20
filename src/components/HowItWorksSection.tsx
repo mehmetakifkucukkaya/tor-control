@@ -6,7 +6,7 @@ const steps = [
   {
     icon: UserPlus,
     title: "Profil Gir",
-    description: "Tor Ajans profiline gir.",
+    description: "Tor Control profiline gir.",
     color: "cyan",
   },
   {
@@ -64,7 +64,7 @@ const HowItWorksSection = () => {
             <span className="text-neon-magenta neon-text">Başvurursun?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Tor Ajans ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
+            Tor Control ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
           </p>
           <p className="text-sm text-muted-foreground mt-4 italic">
             "Birlikte uyumlu çalışabileceğimiz yayıncıları seçiyoruz."
@@ -88,32 +88,32 @@ const HowItWorksSection = () => {
                     animation="zoom-in"
                     delay={index * 150}
                   >
-                    <div className="relative group">
+                    <div className="relative group h-full">
                       {/* Step card */}
-                      <div className="relative glass-card p-6 rounded-3xl text-center transition-all duration-500 hover:scale-105 border border-border/30 hover:border-neon-purple/50 backdrop-blur-xl overflow-hidden">
+                      <div className="relative glass-card p-6 pt-10 rounded-3xl text-center transition-all duration-500 hover:scale-105 border border-border/30 hover:border-neon-purple/50 backdrop-blur-xl overflow-hidden h-full min-h-[220px] flex flex-col">
                         {/* Gradient background glow */}
                         <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`} />
                         
                         {/* Step number badge */}
-                        <div className="absolute -top-0 left-1/2 -translate-x-1/2 -translate-y-1/2">
+                        <div className="absolute top-3 left-1/2 -translate-x-1/2">
                           <div className="relative">
                             <div className="absolute inset-0 bg-gradient-to-br from-neon-purple to-neon-magenta rounded-full blur-md opacity-50" />
-                            <div className="relative w-10 h-10 rounded-full bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center text-sm font-bold shadow-lg border border-white/20">
+                            <div className="relative w-8 h-8 rounded-full bg-gradient-to-br from-neon-purple to-neon-magenta flex items-center justify-center text-sm font-bold shadow-lg border border-white/20">
                               {index + 1}
                             </div>
                           </div>
                         </div>
 
                         {/* Icon container with modern styling */}
-                        <div className={`relative w-20 h-20 mx-auto mb-5 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mt-6 border group-hover:scale-110 transition-transform duration-300 shadow-lg`}>
+                        <div className={`relative w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mt-4 border group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}>
                           <div className="absolute inset-1 rounded-xl bg-background/80 flex items-center justify-center">
-                            <Icon className="w-9 h-9" />
+                            <Icon className="w-7 h-7" />
                           </div>
                         </div>
 
                         {/* Content */}
-                        <h3 className="font-display font-semibold text-lg mb-2 relative z-10">{step.title}</h3>
-                        <p className="text-sm text-muted-foreground relative z-10">{step.description}</p>
+                        <h3 className="font-display font-semibold text-base mb-2 relative z-10">{step.title}</h3>
+                        <p className="text-sm text-muted-foreground relative z-10 flex-grow">{step.description}</p>
                       </div>
 
                       {/* Arrow connector (mobile/tablet) */}

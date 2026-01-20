@@ -34,14 +34,14 @@ const Navigation = () => {
           <a href="/" className="flex items-center gap-3 group">
             <div className="relative">
               <div className="absolute inset-0 bg-neon-cyan/20 rounded-xl blur-md group-hover:bg-neon-cyan/30 transition-all duration-300" />
-              <img src={logo} alt="Tor Ajans Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
+              <img src={logo} alt="Tor Control Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
             </div>
             <div className="hidden sm:flex flex-col">
               <span className="font-display font-bold text-xl bg-gradient-to-r from-neon-cyan to-foreground bg-clip-text text-transparent">
                 TOR
               </span>
               <span className="font-display font-bold text-sm text-neon-magenta -mt-1">
-                AJANS
+                CONTROL
               </span>
             </div>
           </a>

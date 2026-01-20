@@ -6,7 +6,7 @@ const testimonials = [
     name: "Aleyna K.",
     role: "TikTok LIVE Yayıncısı",
     avatar: "AK",
-    content: "Tor Ajans sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
+    content: "Tor Control sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
     rating: 5,
   },
   {
@@ -20,7 +20,7 @@ const testimonials = [
     name: "Zeynep A.",
     role: "Lifestyle Yayıncısı",
     avatar: "ZA",
-    content: "Tor Ajans ailesi gerçekten aile gibi. Her gün birebir destek alıyorum ve sürekli büyüyorum!",
+    content: "Tor Control ailesi gerçekten aile gibi. Her gün birebir destek alıyorum ve sürekli büyüyorum!",
     rating: 5,
   },
 ];
@@ -45,7 +45,7 @@ const SocialProofSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Tor Ajans ile{" "}
+            Tor Control ile{" "}
             <span className="gradient-text">Büyüyen Yayıncılar</span>
           </h2>
           <p className="text-lg text-muted-foreground">

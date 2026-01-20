@@ -52,7 +52,7 @@ const BenefitsSection = () => {
           <ScrollAnimationWrapper animation="fade-right">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
               Neden{" "}
-              <span className="gradient-text">Tor Ajans?</span>
+              <span className="gradient-text">Tor Control?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
               TikTok resmi LIVE ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. 

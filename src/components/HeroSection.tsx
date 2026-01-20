@@ -72,16 +72,16 @@ const HeroSection = () => {
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
-            <span className="gradient-text">Yayıncılara</span> Ekipman
+            <span className="gradient-text">TikTok Live'da</span> Kariyerini
             <br />
-            ve{" "}
-            <span className="text-neon-cyan neon-text">Jeton Desteği</span>
+            <span className="text-neon-cyan neon-text">Zirveye Taşıyoruz</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up animate-delay-200">
-            TikTok LIVE yayıncılarına resmi ajans desteği. Ekipman, eğitim, 
-            strateji ve jeton bonusu ile yayın kariyerini bir üst seviyeye taşı.
+            Tor Control olarak 500+ yayıncıya profesyonel destek sağlıyoruz. 
+            Kişisel yönetici, marka işbirlikleri ve güvenilir ödeme sistemiyle 
+            yayın kariyerinizi bir üst seviyeye taşıyoruz.
           </p>
 
           {/* Slogan */}
@@ -118,7 +118,7 @@ const HeroSection = () => {
 
           {/* Welcome message */}
           <p className="text-sm text-muted-foreground opacity-0 animate-fade-in-up animate-delay-500">
-            🎮 TikTok'ta CANLI YAYIN açıyorsan doğru yerdesin! • Tor Ajans ailesine Hoşgeldin!
+            🎮 TikTok'ta CANLI YAYIN açıyorsan doğru yerdesin! • Tor Control ailesine Hoşgeldin!
           </p>
         </div>
       </div>
