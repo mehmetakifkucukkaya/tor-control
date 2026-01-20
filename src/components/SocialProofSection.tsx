@@ -3,33 +3,33 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const testimonials = [
   {
-    name: "Elif Arslan",
-    role: "E-ticaret Marka Sahibi",
-    avatar: "EA",
-    content: "Tormedya ile çalışmaya başladıktan sonra TikTok satışlarımız %340 arttı. İçerik stratejileri gerçekten işe yarıyor!",
+    name: "Aleyna K.",
+    role: "TikTok LIVE Yayıncısı",
+    avatar: "AK",
+    content: "Tor Ajans sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
     rating: 5,
   },
   {
-    name: "Burak Özdemir",
-    role: "Startup Kurucusu",
-    avatar: "BO",
-    content: "Influencer kampanyalarımızı profesyonelce yönettiler. 2 ayda hedef kitlemizi 5 kat büyüttük.",
+    name: "Emre T.",
+    role: "Gaming Streamer",
+    avatar: "ET",
+    content: "Gaming chair ve mikrofon desteği aldım. Stratejik danışmanlık ile takipçi sayım hızla arttı.",
     rating: 5,
   },
   {
-    name: "Selin Yıldız",
-    role: "Kozmetik Markası CEO'su",
-    avatar: "SY",
-    content: "Sosyal medya yönetimi ve reklam stratejileri konusunda aldığımız destek paha biçilemez. Kesinlikle tavsiye ederim!",
+    name: "Zeynep A.",
+    role: "Lifestyle Yayıncısı",
+    avatar: "ZA",
+    content: "Tor Ajans ailesi gerçekten aile gibi. Her gün birebir destek alıyorum ve sürekli büyüyorum!",
     rating: 5,
   },
 ];
 
 const stats = [
-  { value: "150+", label: "Başarılı Proje", suffix: "" },
-  { value: "80+", label: "Mutlu Müşteri", suffix: "" },
-  { value: "50M+", label: "Toplam Erişim", suffix: "" },
-  { value: "200+", label: "Influencer Ağı", suffix: "" },
+  { value: "500+", label: "Aktif Yayıncı", suffix: "" },
+  { value: "1000+", label: "Dağıtılan Ekipman", suffix: "" },
+  { value: "10M+", label: "Jeton Desteği", suffix: "" },
+  { value: "200+", label: "Başarılı İş Birliği", suffix: "" },
 ];
 
 const SocialProofSection = () => {
@@ -45,11 +45,11 @@ const SocialProofSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Müşterilerimiz{" "}
-            <span className="gradient-text">Ne Diyor?</span>
+            Tor Ajans ile{" "}
+            <span className="gradient-text">Büyüyen Yayıncılar</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Birlikte çalıştığımız markaların deneyimlerini ve başarı hikayelerini keşfedin.
+            Ailemize katılan yayıncıların deneyimlerini ve başarı hikayelerini keşfedin.
           </p>
         </ScrollAnimationWrapper>
 

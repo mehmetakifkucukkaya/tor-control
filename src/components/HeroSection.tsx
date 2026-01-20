@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, TrendingUp, Users, Eye, Award } from "lucide-react";
+import { ArrowRight, Sparkles, Users, Gamepad2, GraduationCap, Coins } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
 
@@ -67,42 +67,46 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-neon-purple/30 opacity-0 animate-fade-in-up">
             <Sparkles className="w-4 h-4 text-neon-cyan" />
-            <span className="text-sm text-muted-foreground">TikTok & Sosyal Medya Ajansı</span>
+            <span className="text-sm text-muted-foreground">TikTok Resmi LIVE Ajansı</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
-            <span className="gradient-text">Markanızı</span> Dijital
+            <span className="gradient-text">Yayıncılara</span> Ekipman
             <br />
-            Dünyada{" "}
-            <span className="text-neon-cyan neon-text">Parlatıyoruz</span>
+            ve{" "}
+            <span className="text-neon-cyan neon-text">Jeton Desteği</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up animate-delay-200">
-            TikTok & Instagram uzmanlığıyla markanızın dijital varlığını güçlendiriyoruz. 
-            İçerik üretiminden influencer marketinge, reklam yönetiminden strateji danışmanlığına 
-            kadar tüm ihtiyaçlarınız için yanınızdayız.
+            TikTok LIVE yayıncılarına resmi ajans desteği. Ekipman, eğitim, 
+            strateji ve jeton bonusu ile yayın kariyerini bir üst seviyeye taşı.
+          </p>
+
+          {/* Slogan */}
+          <p className="text-lg font-display font-semibold text-neon-magenta opacity-0 animate-fade-in-up animate-delay-250">
+            Hızlı • Güvenilir • Resmi
           </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up animate-delay-300">
             <Button variant="neon" size="xl" className="group" onClick={scrollToApply}>
-              Teklif Al
+              Hemen Başvur
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="neon-outline" size="xl" onClick={scrollToApply}>
-              Hemen Başla
+              Daha Fazla Bilgi
             </Button>
           </div>
 
           {/* Trust indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 opacity-0 animate-fade-in-up animate-delay-400">
             {[
-              { icon: TrendingUp, value: "150+", label: "Başarılı Proje" },
-              { icon: Users, value: "80+", label: "Mutlu Müşteri" },
-              { icon: Eye, value: "50M+", label: "Toplam Erişim" },
-              { icon: Award, value: "200+", label: "Influencer Ağı" },
+              { icon: Users, value: "500+", label: "Aktif Yayıncı" },
+              { icon: Gamepad2, value: "1000+", label: "Dağıtılan Ekipman" },
+              { icon: Coins, value: "10M+", label: "Jeton Desteği" },
+              { icon: GraduationCap, value: "200+", label: "Başarılı İş Birliği" },
             ].map((stat, index) => (
               <div key={index} className="glass-card p-4 rounded-xl text-center group hover:scale-105 transition-all duration-300">
                 <stat.icon className="w-6 h-6 text-neon-cyan mx-auto mb-2" />
@@ -112,9 +116,9 @@ const HeroSection = () => {
             ))}
           </div>
 
-          {/* Social proof text */}
+          {/* Welcome message */}
           <p className="text-sm text-muted-foreground opacity-0 animate-fade-in-up animate-delay-500">
-            ⭐ Sizi Cümle Aleme Reklam Ederiz • Yaratıcılık • Şeffaflık • Sonuç Odaklılık
+            🎮 TikTok'ta CANLI YAYIN açıyorsan doğru yerdesin! • Tor Ajans ailesine Hoşgeldin!
           </p>
         </div>
       </div>

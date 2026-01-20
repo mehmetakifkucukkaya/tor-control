@@ -4,28 +4,28 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const benefits = [
   {
-    title: "Güvenilir Ajans",
-    description: "3 yılı aşkın sektör deneyimimizle güvenilir ve şeffaf bir ajans olarak yanınızdayız.",
+    title: "Resmi TikTok Ajansı",
+    description: "TikTok tarafından onaylı resmi ajans statüsü ile güvenle çalışabilirsiniz.",
   },
   {
-    title: "Hızlı Ödeme Garantisi",
-    description: "Kazançlarınız düzenli ve zamanında hesabınıza aktarılır. Ödeme takibi derdiniz olmaz.",
+    title: "Ekipman Desteği",
+    description: "Gaming chair, ring light, mikrofon ve profesyonel yayın setleri sağlıyoruz.",
   },
   {
-    title: "Özel Eğitim Programı",
-    description: "Sektörün en başarılı yayıncılarından öğrenme fırsatı ve sürekli gelişim imkanı.",
+    title: "Jeton ve Prim Bonusları",
+    description: "Performansa göre jeton desteği ve prim ödemeleri ile kazancını artır.",
   },
   {
-    title: "Marka İşbirliği Fırsatları",
-    description: "Profilinize uygun sponsorluk ve reklam anlaşmalarıyla ek gelir kaynakları oluşturun.",
+    title: "Kişisel Strateji Danışmanı",
+    description: "Her yayıncıya özel büyüme stratejileri ve birebir yönlendirme.",
   },
   {
-    title: "7/24 Destek Ekibi",
-    description: "Herhangi bir sorun yaşadığınızda anında ulaşabileceğiniz profesyonel destek ekibi.",
+    title: "Günlük Birebir Destek",
+    description: "Her gün iletişim halinde olduğumuz ajans desteği ve profesyonel rehberlik.",
   },
   {
-    title: "Toplu Güç Avantajı",
-    description: "500+ yayıncılık ağımızın gücünden faydalanın, networking ve işbirliği fırsatları yakalayın.",
+    title: "Topluluk Avantajı",
+    description: "500+ yayıncı ağımızın gücünden faydalan, networking ve işbirliği fırsatları yakala.",
   },
 ];
 
@@ -52,11 +52,11 @@ const BenefitsSection = () => {
           <ScrollAnimationWrapper animation="fade-right">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
               Neden{" "}
-              <span className="gradient-text">Tor Control?</span>
+              <span className="gradient-text">Tor Ajans?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              Türkiye'nin en güvenilir TikTok Live ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. 
-              Şeffaf süreçler, zamanında ödemeler ve profesyonel destek ile fark yaratıyoruz.
+              TikTok resmi LIVE ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. 
+              Ekipman desteği, jeton bonusları ve profesyonel eğitim ile fark yaratıyoruz.
             </p>
 
             {/* Stats */}
@@ -69,8 +69,8 @@ const BenefitsSection = () => {
               </ScrollAnimationWrapper>
               <ScrollAnimationWrapper animation="zoom-in" delay={300}>
                 <div className="glass-card p-4 md:p-6 rounded-2xl text-center group hover:glow-cyan transition-all duration-300">
-                  <p className="text-2xl md:text-3xl font-display font-bold text-neon-cyan mb-2">48s</p>
-                  <p className="text-sm text-muted-foreground">Ort. Yanıt Süresi</p>
+                  <p className="text-2xl md:text-3xl font-display font-bold text-neon-cyan mb-2">7/24</p>
+                  <p className="text-sm text-muted-foreground">Ajans Desteği</p>
                 </div>
               </ScrollAnimationWrapper>
             </div>
