@@ -36,31 +36,62 @@ const PerformanceShowcase = () => {
         <div className="max-w-6xl mx-auto">
           <ScrollAnimationWrapper animation="fade-up" className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Yayıncı <span className="gradient-text">Paneli</span>
+              <span className="gradient-text">Tor Control</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Tor Control ile çalışan yayıncılar, özel yayıncı panelimiz üzerinden tüm istatistiklerini, kazançlarını ve
-              desteklerini takip edebilir.
+              Gelişmiş Yayıncı Kontrol Paneli
             </p>
           </ScrollAnimationWrapper>
 
-          {/* Dashboard Preview */}
+          {/* Dashboard Preview - Based on reference design */}
           <ScrollAnimationWrapper animation="zoom-in" delay={200}>
-            <div className="glass-card neon-border p-6 md:p-8 rounded-3xl">
+            <div className="glass-card neon-border p-6 md:p-10 rounded-3xl">
               {/* Header */}
-              <div className="flex flex-col md:flex-row items-start md:items-center justify-between gap-4 mb-8">
-                <div>
-                  <h3 className="text-xl md:text-2xl font-display font-bold mb-2">Tor Control</h3>
-                  <p className="text-muted-foreground text-sm">Gerçek zamanlı performans takibi ve kazanç analizi</p>
+              <div className="text-center mb-10">
+                <h3 className="text-2xl md:text-3xl font-display font-bold mb-4">
+                  <span className="text-neon-cyan">TOR</span>{" "}
+                  <span className="text-neon-magenta">CONTROL</span>
+                </h3>
+                <p className="text-muted-foreground">
+                  Yayıncılar için özel tasarlanmış kontrol paneli
+                </p>
+              </div>
+
+              {/* Features List */}
+              <div className="space-y-4 mb-10 max-w-xl mx-auto">
+                <div className="flex items-start gap-4 p-4 glass-card rounded-xl border border-border/30 hover:border-neon-cyan/30 transition-colors">
+                  <div className="w-3 h-3 rounded-full bg-neon-cyan mt-1.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Yayın Süresi & Performans Takibi</h4>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Günlük, haftalık ve aylık yayın sürelerinizi anlık olarak takip edin.
+                    </p>
+                  </div>
                 </div>
-                <Button variant="neon" size="sm" onClick={openPanel} className="group">
-                  Panele Erişin
-                  <ArrowUpRight className="w-4 h-4 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
-                </Button>
+                
+                <div className="flex items-start gap-4 p-4 glass-card rounded-xl border border-border/30 hover:border-neon-magenta/30 transition-colors">
+                  <div className="w-3 h-3 rounded-full bg-neon-magenta mt-1.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Jeton & Destek Hak Edişi</h4>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Kazandığınız jetonları ve destek haklarınızı detaylı görüntüleyin.
+                    </p>
+                  </div>
+                </div>
+                
+                <div className="flex items-start gap-4 p-4 glass-card rounded-xl border border-border/30 hover:border-neon-purple/30 transition-colors">
+                  <div className="w-3 h-3 rounded-full bg-neon-purple mt-1.5 flex-shrink-0" />
+                  <div>
+                    <h4 className="font-semibold text-foreground">Otomatik Uyarı & Ödül Sistemi</h4>
+                    <p className="text-sm text-muted-foreground mt-1">
+                      Hedeflerinize ulaştığınızda otomatik bildirimler ve ödüller kazanın.
+                    </p>
+                  </div>
+                </div>
               </div>
 
               {/* Stats Grid */}
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-8">
+              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 mb-10">
                 {stats.map((stat, index) => {
                   const Icon = stat.icon;
                   const colorClass = colorClasses[stat.color as keyof typeof colorClasses];
@@ -78,26 +109,16 @@ const PerformanceShowcase = () => {
                 })}
               </div>
 
-              {/* Features List */}
-              <div className="grid md:grid-cols-3 gap-4">
-                <div className="glass-card p-4 rounded-xl border border-border/30 hover:border-neon-cyan/30 transition-colors">
-                  <h4 className="font-semibold mb-2 text-neon-cyan">Kazanç Takibi</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Günlük, haftalık ve aylık kazançlarını detaylı grafiklerle takip et.
-                  </p>
-                </div>
-                <div className="glass-card p-4 rounded-xl border border-border/30 hover:border-neon-magenta/30 transition-colors">
-                  <h4 className="font-semibold mb-2 text-neon-magenta">Hediye Analizi</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Aldığın hediyeleri ve bonus kazançlarını anlık olarak gör.
-                  </p>
-                </div>
-                <div className="glass-card p-4 rounded-xl border border-border/30 hover:border-neon-purple/30 transition-colors">
-                  <h4 className="font-semibold mb-2 text-neon-purple">Ajans Desteği</h4>
-                  <p className="text-sm text-muted-foreground">
-                    Kişisel yöneticinle doğrudan iletişime geç ve destek al.
-                  </p>
-                </div>
+              {/* Slogan & CTA */}
+              <div className="text-center">
+                <p className="text-lg md:text-xl font-display font-bold mb-6">
+                  <span className="text-neon-cyan">Kontrol Bizde,</span>{" "}
+                  <span className="text-neon-magenta">Güç Bizde</span>
+                </p>
+                <Button variant="neon" size="lg" onClick={openPanel} className="group">
+                  Panele Erişin
+                  <ArrowUpRight className="w-5 h-5 group-hover:translate-x-0.5 group-hover:-translate-y-0.5 transition-transform" />
+                </Button>
               </div>
             </div>
           </ScrollAnimationWrapper>
