@@ -16,10 +16,11 @@ const Navigation = () => {
   }, []);
 
   const navLinks = [
-    { name: "Özellikler", href: "#features" },
+    { name: "Hakkımızda", href: "#about" },
+    { name: "Hizmetler", href: "#features" },
     { name: "Avantajlar", href: "#benefits" },
     { name: "Nasıl Çalışır", href: "#how-it-works" },
-    { name: "Referanslar", href: "#testimonials" },
+    { name: "Yorumlar", href: "#testimonials" },
   ];
 
   return (

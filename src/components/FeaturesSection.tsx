@@ -6,32 +6,32 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 const features = [
   {
     icon: BarChart3,
-    title: "Performans Takibi",
-    description: "Yayın performansınızı ve büyüme metriklerinizi izlemek için gerçek zamanlı analitik ve içgörüler.",
+    title: "Yayıncı Geliştirme",
+    description: "Kişiselleştirilmiş koçluk ve eğitim programlarıyla yayın becerilerinizi profesyonel seviyeye taşıyoruz.",
     color: "cyan",
   },
   {
     icon: DollarSign,
-    title: "Kazanç Takibi",
-    description: "Gelirinizi takip edin, detaylı dökümlerı görün ve aylık kazançlarınızı tahmin edin.",
+    title: "Gelir Optimizasyonu",
+    description: "Stratejik yayın planlaması ve izleyici etkileşimi teknikleriyle kazançlarınızı maksimize ediyoruz.",
     color: "magenta",
   },
   {
     icon: Target,
-    title: "Hedef & Görev Sistemi",
-    description: "Haftalık hedefler belirleyin, görevleri tamamlayın ve kilometre taşlarına ulaştığınızda bonus ödüller kazanın.",
+    title: "Marka İşbirlikleri",
+    description: "Profilinize uygun markalarla sponsorluk ve işbirliği fırsatları oluşturuyoruz.",
     color: "purple",
   },
   {
     icon: HeadphonesIcon,
-    title: "Gerçek Zamanlı Destek",
-    description: "Yayın kariyerinizi optimize etmenize ve büyütmenize yardımcı olmak için 7/24 özel yönetici desteği.",
+    title: "Kişisel Yönetici",
+    description: "Her yayıncımıza özel atanan yöneticiler, kariyerinizin her aşamasında yanınızda.",
     color: "pink",
   },
   {
     icon: Coins,
-    title: "Jeton Optimizasyonu",
-    description: "Stratejik jeton destek programımızla sanal hediye ödüllerinizi maksimuma çıkarın.",
+    title: "Topluluk Desteği",
+    description: "Diğer başarılı yayıncılarla networking ve deneyim paylaşımı fırsatları sunuyoruz.",
     color: "cyan",
   },
 ];
@@ -95,12 +95,12 @@ const FeaturesSection = () => {
           {/* Right - Text content */}
           <ScrollAnimationWrapper animation="fade-left" className="text-center lg:text-left order-1 lg:order-2">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Neler{" "}
-              <span className="gradient-text">Sunuyoruz</span>
+              Ajans{" "}
+              <span className="gradient-text">Hizmetlerimiz</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              TikTok Live yayıncısı olarak başarılı olmanız için ihtiyacınız olan her şey, tek bir platformda. 
-              Profesyonel araçlar ve kişiselleştirilmiş destekle kazançlarınızı maksimize edin.
+              Yayıncılarımızın başarısı için kapsamlı hizmetler sunuyoruz. Kariyer planlamasından 
+              marka işbirliklerine, eğitimden topluluk desteğine kadar her alanda yanınızdayız.
             </p>
           </ScrollAnimationWrapper>
         </div>
