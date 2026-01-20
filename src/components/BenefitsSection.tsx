@@ -33,13 +33,13 @@ const BenefitsSection = () => {
   return (
     <section id="benefits" className="py-24 relative overflow-hidden">
       {/* Background image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-30"
         style={{ backgroundImage: `url(${benefitsBg})` }}
       />
       {/* Background overlay */}
       <div className="absolute inset-0 bg-gradient-to-br from-background via-background/85 to-background" />
-      
+
       {/* Background effects */}
       <div className="absolute inset-0">
         <div className="absolute top-0 right-0 w-96 h-96 bg-neon-magenta/10 rounded-full blur-3xl" />
@@ -51,12 +51,11 @@ const BenefitsSection = () => {
           {/* Left content */}
           <ScrollAnimationWrapper animation="fade-right">
             <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              Neden{" "}
-              <span className="gradient-text">Tor Control?</span>
+              Neden <span className="gradient-text">Tor Media Control?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              TikTok resmi LIVE ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. 
-              Ekipman desteği, jeton bonusları ve profesyonel eğitim ile fark yaratıyoruz.
+              TikTok resmi LIVE ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. Ekipman desteği, jeton
+              bonusları ve profesyonel eğitim ile fark yaratıyoruz.
             </p>
 
             {/* Stats */}
@@ -79,14 +78,8 @@ const BenefitsSection = () => {
           {/* Right - Benefits list */}
           <div className="space-y-4">
             {benefits.map((benefit, index) => (
-              <ScrollAnimationWrapper
-                key={index}
-                animation="fade-left"
-                delay={index * 100}
-              >
-                <div
-                  className="glass-card p-4 md:p-6 rounded-2xl flex gap-4 group hover:scale-[1.02] transition-all duration-300 border border-transparent hover:border-neon-cyan/30"
-                >
+              <ScrollAnimationWrapper key={index} animation="fade-left" delay={index * 100}>
+                <div className="glass-card p-4 md:p-6 rounded-2xl flex gap-4 group hover:scale-[1.02] transition-all duration-300 border border-transparent hover:border-neon-cyan/30">
                   <div className="flex-shrink-0 w-10 h-10 rounded-xl bg-gradient-to-br from-neon-purple to-neon-cyan flex items-center justify-center group-hover:scale-110 transition-transform">
                     <Check className="w-5 h-5 text-foreground" />
                   </div>
