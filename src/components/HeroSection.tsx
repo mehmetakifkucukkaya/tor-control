@@ -1,6 +1,6 @@
 import { useEffect, useRef } from "react";
 import { Button } from "@/components/ui/button";
-import { ArrowRight, Sparkles, Users, Trophy, Shield, Star } from "lucide-react";
+import { ArrowRight, Sparkles, TrendingUp, Users, Eye, Award } from "lucide-react";
 import heroBg from "@/assets/hero-bg.jpg";
 import heroVideo from "@/assets/hero-video.mp4";
 
@@ -67,42 +67,42 @@ const HeroSection = () => {
           {/* Badge */}
           <div className="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card border border-neon-purple/30 opacity-0 animate-fade-in-up">
             <Sparkles className="w-4 h-4 text-neon-cyan" />
-            <span className="text-sm text-muted-foreground">Türkiye'nin Lider TikTok Live Ajansı</span>
+            <span className="text-sm text-muted-foreground">TikTok & Sosyal Medya Ajansı</span>
           </div>
 
           {/* Main heading */}
           <h1 className="text-4xl md:text-5xl lg:text-6xl xl:text-7xl font-display font-bold leading-tight opacity-0 animate-fade-in-up animate-delay-100">
-            TikTok Live'da{" "}
-            <span className="gradient-text">Kariyerini</span>
+            <span className="gradient-text">Markanızı</span> Dijital
             <br />
-            <span className="text-neon-cyan neon-text">Zirveye</span> Taşıyalım.
+            Dünyada{" "}
+            <span className="text-neon-cyan neon-text">Parlatıyoruz</span>
           </h1>
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up animate-delay-200">
-            Tor Control olarak 500+ yayıncıya profesyonel destek sağlıyoruz. 
-            Kişisel yönetici, marka işbirlikleri ve güvenilir ödeme sistemiyle 
-            yayın kariyerinizi bir üst seviyeye taşıyoruz.
+            TikTok & Instagram uzmanlığıyla markanızın dijital varlığını güçlendiriyoruz. 
+            İçerik üretiminden influencer marketinge, reklam yönetiminden strateji danışmanlığına 
+            kadar tüm ihtiyaçlarınız için yanınızdayız.
           </p>
 
           {/* CTA buttons */}
           <div className="flex flex-col sm:flex-row gap-4 justify-center opacity-0 animate-fade-in-up animate-delay-300">
             <Button variant="neon" size="xl" className="group" onClick={scrollToApply}>
-              Ajansa Katıl
+              Teklif Al
               <ArrowRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </Button>
             <Button variant="neon-outline" size="xl" onClick={scrollToApply}>
-              Bize Ulaşın
+              Hemen Başla
             </Button>
           </div>
 
           {/* Trust indicators */}
           <div className="grid grid-cols-2 md:grid-cols-4 gap-4 pt-8 opacity-0 animate-fade-in-up animate-delay-400">
             {[
-              { icon: Users, value: "500+", label: "Aktif Yayıncı" },
-              { icon: Trophy, value: "3+", label: "Yıllık Tecrübe" },
-              { icon: Shield, value: "7/24", label: "Destek" },
-              { icon: Star, value: "98%", label: "Memnuniyet" },
+              { icon: TrendingUp, value: "150+", label: "Başarılı Proje" },
+              { icon: Users, value: "80+", label: "Mutlu Müşteri" },
+              { icon: Eye, value: "50M+", label: "Toplam Erişim" },
+              { icon: Award, value: "200+", label: "Influencer Ağı" },
             ].map((stat, index) => (
               <div key={index} className="glass-card p-4 rounded-xl text-center group hover:scale-105 transition-all duration-300">
                 <stat.icon className="w-6 h-6 text-neon-cyan mx-auto mb-2" />
@@ -114,7 +114,7 @@ const HeroSection = () => {
 
           {/* Social proof text */}
           <p className="text-sm text-muted-foreground opacity-0 animate-fade-in-up animate-delay-500">
-            ⭐ Türkiye genelinde güvenilen ajans • Şeffaf süreçler • Profesyonel destek
+            ⭐ Sizi Cümle Aleme Reklam Ederiz • Yaratıcılık • Şeffaflık • Sonuç Odaklılık
           </p>
         </div>
       </div>

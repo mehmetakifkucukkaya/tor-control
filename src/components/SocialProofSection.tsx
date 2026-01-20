@@ -3,33 +3,33 @@ import ScrollAnimationWrapper from "./ScrollAnimationWrapper";
 
 const testimonials = [
   {
-    name: "Ayşe Yılmaz",
-    role: "Ajans Yayıncısı • 8 Aydır Üye",
-    avatar: "AY",
-    content: "Tor Control'e katılmadan önce ayda 2-3 bin TL kazanıyordum. Şimdi düzenli olarak 15 bin üzeri kazanıyorum. Yöneticim sürekli yanımda!",
+    name: "Elif Arslan",
+    role: "E-ticaret Marka Sahibi",
+    avatar: "EA",
+    content: "Tormedya ile çalışmaya başladıktan sonra TikTok satışlarımız %340 arttı. İçerik stratejileri gerçekten işe yarıyor!",
     rating: 5,
   },
   {
-    name: "Mehmet Kaya",
-    role: "Ajans Yayıncısı • 1 Yıldır Üye",
-    avatar: "MK",
-    content: "Ajansın sağladığı marka işbirlikleri sayesinde sadece yayın değil, sponsorluk gelirleri de kazanmaya başladım. Profesyonel bir ekip!",
+    name: "Burak Özdemir",
+    role: "Startup Kurucusu",
+    avatar: "BO",
+    content: "Influencer kampanyalarımızı profesyonelce yönettiler. 2 ayda hedef kitlemizi 5 kat büyüttük.",
     rating: 5,
   },
   {
-    name: "Zeynep Demir",
-    role: "Ajans Yayıncısı • 6 Aydır Üye",
-    avatar: "ZD",
-    content: "Diğer ajansları da denedim ama Tor Control gerçekten farklı. Şeffaf, dürüst ve her zaman ulaşılabilir durumdalar.",
+    name: "Selin Yıldız",
+    role: "Kozmetik Markası CEO'su",
+    avatar: "SY",
+    content: "Sosyal medya yönetimi ve reklam stratejileri konusunda aldığımız destek paha biçilemez. Kesinlikle tavsiye ederim!",
     rating: 5,
   },
 ];
 
 const stats = [
-  { value: "500+", label: "Aktif Yayıncı", suffix: "" },
-  { value: "3", label: "Yıllık Tecrübe", suffix: "+" },
-  { value: "50+", label: "Marka İşbirliği", suffix: "" },
-  { value: "98%", label: "Memnuniyet", suffix: "" },
+  { value: "150+", label: "Başarılı Proje", suffix: "" },
+  { value: "80+", label: "Mutlu Müşteri", suffix: "" },
+  { value: "50M+", label: "Toplam Erişim", suffix: "" },
+  { value: "200+", label: "Influencer Ağı", suffix: "" },
 ];
 
 const SocialProofSection = () => {
@@ -45,11 +45,11 @@ const SocialProofSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Yayıncılarımız{" "}
+            Müşterilerimiz{" "}
             <span className="gradient-text">Ne Diyor?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Ajansımıza katılan yayıncıların deneyimlerini ve başarı hikayelerini keşfedin.
+            Birlikte çalıştığımız markaların deneyimlerini ve başarı hikayelerini keşfedin.
           </p>
         </ScrollAnimationWrapper>
 
