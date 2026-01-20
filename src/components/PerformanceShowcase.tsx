@@ -32,16 +32,7 @@ const PerformanceShowcase = () => {
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 bg-neon-magenta/10 rounded-full blur-3xl" />
       </div>
 
-      <div className="container relative z-10 px-4">
-        <div className="max-w-6xl mx-auto">
-          <ScrollAnimationWrapper animation="fade-up" className="text-center mb-16">
-            <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-              <span className="gradient-text">Tor Control</span>
-            </h2>
-            <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              Gelişmiş Yayıncı Kontrol Paneli
-            </p>
-          </ScrollAnimationWrapper>
+     
 
           {/* Dashboard Preview - Based on reference design */}
           <ScrollAnimationWrapper animation="zoom-in" delay={200}>
