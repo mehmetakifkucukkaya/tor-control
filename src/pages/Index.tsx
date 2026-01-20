@@ -2,7 +2,7 @@ import Navigation from "@/components/Navigation";
 import HeroSection from "@/components/HeroSection";
 import FeaturesSection from "@/components/FeaturesSection";
 import BenefitsSection from "@/components/BenefitsSection";
-import HowItWorksSection from "@/components/HowItWorksSection";
+import EcosystemSection from "@/components/EcosystemSection";
 import SocialProofSection from "@/components/SocialProofSection";
 import PerformanceShowcase from "@/components/PerformanceShowcase";
 import ContactSection from "@/components/ContactSection";
@@ -20,8 +20,8 @@ const Index = () => {
         <section id="benefits">
           <BenefitsSection />
         </section>
-        <section id="how-it-works">
-          <HowItWorksSection />
+        <section id="ecosystem">
+          <EcosystemSection />
         </section>
         <section id="testimonials">
           <SocialProofSection />
