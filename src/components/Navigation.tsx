@@ -68,11 +68,14 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-20 md:h-28">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2 group relative z-[60]">
-            <img
-              src={logo}
-              alt="Tor Control Logo"
-              className="h-24 md:h-24 w-auto drop-shadow-[0_0_25px_rgba(0,0,0,0.8)] filter"
-            />
+              <img
+                src={logo}
+                alt="Tor Control Logo"
+                className="h-16 md:h-24 w-auto drop-shadow-[0_0_25px_rgba(0,0,0,0.8)] filter"
+              />
+              <span className="md:hidden text-sm font-bold gradient-text">
+                Tor Media Agency
+              </span>
             </a>
 
             {/* Desktop navigation */}
