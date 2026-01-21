@@ -52,28 +52,28 @@ const EcosystemSection = () => {
           {/* Ecosystem Card */}
           <ScrollAnimationWrapper animation="zoom-in" delay={200}>
             <div className="glass-card neon-border p-6 md:p-8 rounded-3xl">
-              <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6">
+              <div className="grid grid-cols-2 gap-4 md:gap-6">
                 {ecosystemItems.map((item, index) => (
                   <div
                     key={index}
-                    className="group relative overflow-hidden rounded-2xl aspect-[3/4] cursor-pointer"
+                    className="group relative overflow-hidden rounded-2xl aspect-[4/5] md:aspect-[3/4] cursor-pointer"
                   >
                     {/* Image */}
                     <img
                       src={item.image}
                       alt={item.title}
-                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-110"
+                      className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     
-                    {/* Overlay gradient */}
-                    <div className="absolute inset-0 bg-gradient-to-t from-background via-background/30 to-transparent opacity-80 group-hover:opacity-90 transition-opacity duration-300" />
+                    {/* Overlay gradient - only at bottom */}
+                    <div className="absolute inset-x-0 bottom-0 h-24 md:h-28 bg-gradient-to-t from-background via-background/90 to-transparent" />
                     
-                    {/* Content */}
-                    <div className="absolute inset-x-0 bottom-0 p-4 transform translate-y-2 group-hover:translate-y-0 transition-transform duration-300">
-                      <h3 className="font-display font-bold text-sm md:text-base mb-1 text-foreground">
+                    {/* Content - positioned at very bottom */}
+                    <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
+                      <h3 className="font-display font-bold text-base md:text-lg text-foreground">
                         {item.title}
                       </h3>
-                      <p className="text-xs md:text-sm text-muted-foreground opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                      <p className="text-sm text-muted-foreground mt-1">
                         {item.description}
                       </p>
                     </div>
