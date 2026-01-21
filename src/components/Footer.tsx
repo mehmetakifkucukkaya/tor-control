@@ -7,22 +7,11 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3 group">
-            <div className="relative">
-              <div className="absolute inset-0 bg-neon-cyan/15 rounded-xl blur-md" />
-              <img
-                src={logo}
-                alt="Tor Control Logo"
-                className="h-10 w-auto relative z-10 drop-shadow-[0_0_6px_rgba(0,228,255,0.4)]"
-              />
-            </div>
-            <div className="flex flex-col">
-              <span className="font-display font-bold text-xl bg-gradient-to-r from-neon-cyan to-foreground bg-clip-text text-transparent">
-                TOR MEDIA
-              </span>
-              <span className="font-display font-bold text-sm text-neon-magenta -mt-1">
-                AGENCY
-              </span>
-            </div>
+            <img
+              src={logo}
+              alt="Tor Control Logo"
+              className="h-16 w-auto drop-shadow-[0_0_10px_rgba(0,228,255,0.5)]"
+            />
           </div>
 
           {/* Slogan */}
