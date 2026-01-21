@@ -56,7 +56,7 @@ const EcosystemSection = () => {
                 {ecosystemItems.map((item, index) => (
                   <div
                     key={index}
-                    className="group relative overflow-hidden rounded-2xl aspect-[4/5] md:aspect-[3/4] cursor-pointer"
+                    className="group relative overflow-hidden rounded-2xl aspect-square md:aspect-[3/4] cursor-pointer"
                   >
                     {/* Image */}
                     <img
@@ -65,12 +65,12 @@ const EcosystemSection = () => {
                       className="absolute inset-0 w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
                     />
                     
-                    {/* Overlay gradient - only at bottom */}
-                    <div className="absolute inset-x-0 bottom-0 h-24 md:h-28 bg-gradient-to-t from-background via-background/90 to-transparent" />
+                    {/* Overlay gradient - only on desktop */}
+                    <div className="hidden md:block absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-background via-background/90 to-transparent" />
                     
-                    {/* Content - positioned at very bottom */}
-                    <div className="absolute inset-x-0 bottom-0 p-4 md:p-5">
-                      <h3 className="font-display font-bold text-base md:text-lg text-foreground">
+                    {/* Content - hidden on mobile, shown on desktop */}
+                    <div className="hidden md:block absolute inset-x-0 bottom-0 p-5">
+                      <h3 className="font-display font-bold text-lg text-foreground">
                         {item.title}
                       </h3>
                       <p className="text-sm text-muted-foreground mt-1">
