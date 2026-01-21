@@ -20,12 +20,12 @@ const Navigation = () => {
   // Lock body scroll when menu is open
   useEffect(() => {
     if (isMobileMenuOpen) {
-      document.body.style.overflow = 'hidden';
+      document.body.style.overflow = "hidden";
     } else {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     }
     return () => {
-      document.body.style.overflow = '';
+      document.body.style.overflow = "";
     };
   }, [isMobileMenuOpen]);
 
@@ -39,22 +39,22 @@ const Navigation = () => {
   const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
     e.preventDefault();
     setIsMobileMenuOpen(false);
-    
+
     // Small delay to allow menu to close before scrolling
     setTimeout(() => {
       if (href === "#") {
-        window.scrollTo({ top: 0, behavior: 'smooth' });
+        window.scrollTo({ top: 0, behavior: "smooth" });
       } else {
         const element = document.querySelector(href);
         if (element) {
-          element.scrollIntoView({ behavior: 'smooth' });
+          element.scrollIntoView({ behavior: "smooth" });
         }
       }
     }, 100);
   };
 
   const toggleMenu = () => {
-    setIsMobileMenuOpen(prev => !prev);
+    setIsMobileMenuOpen((prev) => !prev);
   };
 
   return (
@@ -68,7 +68,11 @@ const Navigation = () => {
           <div className="flex items-center justify-between h-20 md:h-28">
             {/* Logo */}
             <a href="/" className="flex items-center gap-2 group relative z-[60]">
-              <img src={logo} alt="Tor Control Logo" className="h-20 md:h-24 w-auto drop-shadow-[0_0_12px_rgba(0,228,255,0.6)]" />
+              <img
+                src={logo}
+                alt="Tor Control Logo"
+                className="h-24 md:h-24 w-auto drop-shadow-[0_0_12px_rgba(0,228,255,0.6)]"
+              />
             </a>
 
             {/* Desktop navigation */}
@@ -101,15 +105,15 @@ const Navigation = () => {
               aria-label={isMobileMenuOpen ? "Menüyü kapat" : "Menüyü aç"}
             >
               <div className="relative w-6 h-6">
-                <X 
+                <X
                   className={`w-6 h-6 absolute inset-0 transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-100 rotate-0' : 'opacity-0 rotate-90'
-                  }`} 
+                    isMobileMenuOpen ? "opacity-100 rotate-0" : "opacity-0 rotate-90"
+                  }`}
                 />
-                <Menu 
+                <Menu
                   className={`w-6 h-6 absolute inset-0 transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-0 -rotate-90' : 'opacity-100 rotate-0'
-                  }`} 
+                    isMobileMenuOpen ? "opacity-0 -rotate-90" : "opacity-100 rotate-0"
+                  }`}
                 />
               </div>
             </button>
@@ -118,11 +122,11 @@ const Navigation = () => {
       </nav>
 
       {/* Mobile menu overlay */}
-      <div 
+      <div
         className={`md:hidden fixed inset-0 top-16 bg-background/98 backdrop-blur-xl z-40 transition-all duration-300 ease-out ${
-          isMobileMenuOpen 
-            ? 'opacity-100 translate-y-0 pointer-events-auto' 
-            : 'opacity-0 -translate-y-4 pointer-events-none'
+          isMobileMenuOpen
+            ? "opacity-100 translate-y-0 pointer-events-auto"
+            : "opacity-0 -translate-y-4 pointer-events-none"
         }`}
       >
         <div className="container px-4 py-6 h-full overflow-y-auto">
@@ -135,9 +139,9 @@ const Navigation = () => {
                   key={link.name}
                   href={link.href}
                   className={`flex items-center gap-4 p-3 rounded-xl hover:bg-muted/50 transition-all duration-300 ${
-                    isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
+                    isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                   }`}
-                  style={{ transitionDelay: isMobileMenuOpen ? `${index * 50}ms` : '0ms' }}
+                  style={{ transitionDelay: isMobileMenuOpen ? `${index * 50}ms` : "0ms" }}
                   onClick={(e) => handleNavClick(e, link.href)}
                 >
                   <div className={`w-10 h-10 ${link.color} rounded-xl flex items-center justify-center`}>
@@ -150,9 +154,12 @@ const Navigation = () => {
           </div>
 
           {/* Divider */}
-          <div className={`flex items-center gap-3 mb-4 transition-all duration-300 ${
-            isMobileMenuOpen ? 'opacity-100' : 'opacity-0'
-          }`} style={{ transitionDelay: isMobileMenuOpen ? '200ms' : '0ms' }}>
+          <div
+            className={`flex items-center gap-3 mb-4 transition-all duration-300 ${
+              isMobileMenuOpen ? "opacity-100" : "opacity-0"
+            }`}
+            style={{ transitionDelay: isMobileMenuOpen ? "200ms" : "0ms" }}
+          >
             <span className="text-xs font-semibold text-muted-foreground tracking-wider">KURUMSAL</span>
             <div className="flex-1 h-px bg-border/50" />
           </div>
@@ -164,14 +171,14 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-4 p-3 rounded-xl hover:bg-muted/50 transition-all duration-300 ${
-                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
+                isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
               }`}
-              style={{ transitionDelay: isMobileMenuOpen ? '250ms' : '0ms' }}
+              style={{ transitionDelay: isMobileMenuOpen ? "250ms" : "0ms" }}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <div className="w-10 h-10 bg-black rounded-xl flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z"/>
+                  <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
                 </svg>
               </div>
               <span className="text-lg font-medium">TikTok</span>
@@ -181,14 +188,14 @@ const Navigation = () => {
               target="_blank"
               rel="noopener noreferrer"
               className={`flex items-center gap-4 p-3 rounded-xl hover:bg-muted/50 transition-all duration-300 ${
-                isMobileMenuOpen ? 'opacity-100 translate-x-0' : 'opacity-0 -translate-x-4'
+                isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
               }`}
-              style={{ transitionDelay: isMobileMenuOpen ? '300ms' : '0ms' }}
+              style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
               onClick={() => setIsMobileMenuOpen(false)}
             >
               <div className="w-10 h-10 bg-gradient-to-br from-purple-600 via-pink-500 to-orange-400 rounded-xl flex items-center justify-center">
                 <svg className="w-5 h-5 text-white" fill="currentColor" viewBox="0 0 24 24">
-                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+                  <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z" />
                 </svg>
               </div>
               <span className="text-lg font-medium">Instagram</span>
@@ -201,9 +208,9 @@ const Navigation = () => {
             target="_blank"
             rel="noopener noreferrer"
             className={`block glass-card neon-border p-4 rounded-2xl hover:scale-[1.02] transition-all duration-300 ${
-              isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: isMobileMenuOpen ? '300ms' : '0ms' }}
+            style={{ transitionDelay: isMobileMenuOpen ? "300ms" : "0ms" }}
             onClick={() => setIsMobileMenuOpen(false)}
           >
             <div className="flex items-center justify-between">
@@ -226,11 +233,11 @@ const Navigation = () => {
           </a>
 
           {/* Apply Button */}
-          <div 
+          <div
             className={`mt-6 transition-all duration-300 ${
-              isMobileMenuOpen ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-4'
+              isMobileMenuOpen ? "opacity-100 translate-y-0" : "opacity-0 translate-y-4"
             }`}
-            style={{ transitionDelay: isMobileMenuOpen ? '350ms' : '0ms' }}
+            style={{ transitionDelay: isMobileMenuOpen ? "350ms" : "0ms" }}
           >
             <a href="#apply" onClick={(e) => handleNavClick(e, "#apply")}>
               <Button variant="neon" size="lg" className="w-full">

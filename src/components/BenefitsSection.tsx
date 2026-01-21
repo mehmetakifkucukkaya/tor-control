@@ -54,8 +54,8 @@ const BenefitsSection = () => {
               Neden <span className="gradient-text">Tor Media Agency?</span>
             </h2>
             <p className="text-lg text-muted-foreground mb-8">
-              TikTok resmi LIVE ajansı olarak, yayıncılarımızın başarısını ön planda tutuyoruz. Ekipman desteği, jeton
-              bonusları ve profesyonel eğitim ile fark yaratıyoruz.
+              Tor Media Agency olarak, yayıncılarımızın başarısını ön planda tutuyoruz. Ekipman desteği, jeton bonusları
+              ve profesyonel eğitim ile fark yaratıyoruz.
             </p>
 
             {/* Stats */}
