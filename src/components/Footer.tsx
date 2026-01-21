@@ -7,7 +7,7 @@ const Footer = () => {
         <div className="flex flex-col md:flex-row items-center justify-between gap-6">
           {/* Logo */}
           <div className="flex items-center gap-3 group">
-            <img src={logo} alt="Tor Control Logo" className="h-32 md:h-40 w-auto drop-shadow-[0_0_10px_rgba(0,228,255,0.5)]" />
+            <img src={logo} alt="Tor Control Logo" className="h-32 md:h-40 w-auto drop-shadow-[0_0_30px_rgba(0,0,0,0.8)] filter" />
           </div>
 
           {/* Slogan */}
