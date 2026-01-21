@@ -7,7 +7,7 @@ const testimonials = [
     role: "TikTok LIVE Yayıncısı",
     avatar: "AK",
     content:
-      "Tor Control sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
+      "Tor Media Agency sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
     rating: 5,
   },
   {
@@ -21,7 +21,7 @@ const testimonials = [
     name: "Zeynep A.",
     role: "Lifestyle Yayıncısı",
     avatar: "ZA",
-    content: "Tor Control ailesi gerçekten aile gibi. Her gün birebir destek alıyorum ve sürekli büyüyorum!",
+    content: "Tor Media Agency ailesi gerçekten aile gibi. Her gün birebir destek alıyorum ve sürekli büyüyorum!",
     rating: 5,
   },
 ];

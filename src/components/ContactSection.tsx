@@ -19,7 +19,9 @@ const ContactSection = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success("Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Control ailesine hoşgeldin!");
+    toast.success(
+      "Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Media Agency ailesine hoşgeldin!",
+    );
     setFormData({ name: "", tiktokUsername: "", phone: "", followers: "", experience: "", message: "" });
   };
 
@@ -58,7 +60,7 @@ const ContactSection = () => {
                     </h2>
 
                     <p className="text-muted-foreground">
-                      Profesyonel destek, ekipman ve eğitimle büyü. Başvuru formunu doldur ve Tor Control ailesiyle
+                      Profesyonel destek, ekipman ve eğitimle büyü. Başvuru formunu doldur ve Tor Media Agency ailesiyle
                       tanış.
                     </p>
 
