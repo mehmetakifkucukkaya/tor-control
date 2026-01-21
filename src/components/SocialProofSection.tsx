@@ -6,7 +6,8 @@ const testimonials = [
     name: "Aleyna K.",
     role: "TikTok LIVE Yayıncısı",
     avatar: "AK",
-    content: "Tor Control sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
+    content:
+      "Tor Control sayesinde ekipman desteği aldım ve gelirlerim 3 katına çıktı. Birebir destek gerçekten fark yaratıyor!",
     rating: 5,
   },
   {
@@ -45,8 +46,7 @@ const SocialProofSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Tor Control ile{" "}
-            <span className="gradient-text">Büyüyen Yayıncılar</span>
+            Tor Media Agency ile <span className="gradient-text">Büyüyen Yayıncılar</span>
           </h2>
           <p className="text-lg text-muted-foreground">
             Ailemize katılan yayıncıların deneyimlerini ve başarı hikayelerini keşfedin.
@@ -56,16 +56,11 @@ const SocialProofSection = () => {
         {/* Stats */}
         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 md:gap-6 max-w-4xl mx-auto mb-16">
           {stats.map((stat, index) => (
-            <ScrollAnimationWrapper
-              key={index}
-              animation="zoom-in"
-              delay={index * 100}
-            >
-              <div
-                className="glass-card neon-border p-4 md:p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300"
-              >
+            <ScrollAnimationWrapper key={index} animation="zoom-in" delay={index * 100}>
+              <div className="glass-card neon-border p-4 md:p-6 rounded-2xl text-center group hover:scale-105 transition-all duration-300">
                 <p className="text-2xl md:text-3xl lg:text-4xl font-display font-bold text-neon-cyan mb-2">
-                  {stat.value}<span className="text-neon-magenta">{stat.suffix}</span>
+                  {stat.value}
+                  <span className="text-neon-magenta">{stat.suffix}</span>
                 </p>
                 <p className="text-sm text-muted-foreground">{stat.label}</p>
               </div>
@@ -76,14 +71,8 @@ const SocialProofSection = () => {
         {/* Testimonials */}
         <div className="grid md:grid-cols-3 gap-6 max-w-5xl mx-auto">
           {testimonials.map((testimonial, index) => (
-            <ScrollAnimationWrapper
-              key={index}
-              animation="fade-up"
-              delay={index * 150}
-            >
-              <div
-                className="glass-card p-6 md:p-8 rounded-2xl border border-border/50 hover:border-neon-purple/30 transition-all duration-300 hover:glow-purple group h-full"
-              >
+            <ScrollAnimationWrapper key={index} animation="fade-up" delay={index * 150}>
+              <div className="glass-card p-6 md:p-8 rounded-2xl border border-border/50 hover:border-neon-purple/30 transition-all duration-300 hover:glow-purple group h-full">
                 {/* Quote icon */}
                 <Quote className="w-8 h-8 text-neon-purple/30 mb-4 group-hover:text-neon-purple/50 transition-colors" />
 
