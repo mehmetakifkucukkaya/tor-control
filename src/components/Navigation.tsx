@@ -73,9 +73,7 @@ const Navigation = () => {
                 alt="Tor Control Logo"
                 className="h-16 md:h-24 w-auto drop-shadow-[0_0_25px_rgba(0,0,0,0.8)] filter"
               />
-              <span className="md:hidden text-sm font-bold gradient-text">
-                Tor Media Agency
-              </span>
+              <span className="md:hidden text-lg font-bold gradient-text">Tor Media Agency</span>
             </a>
 
             {/* Desktop navigation */}
