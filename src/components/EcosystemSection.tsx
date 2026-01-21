@@ -52,7 +52,7 @@ const EcosystemSection = () => {
           {/* Ecosystem Card */}
           <ScrollAnimationWrapper animation="zoom-in" delay={200}>
             <div className="glass-card neon-border p-6 md:p-8 rounded-3xl">
-              <div className="grid grid-cols-2 gap-4 md:gap-6">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:gap-6">
                 {ecosystemItems.map((item, index) => (
                   <div
                     key={index}
