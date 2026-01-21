@@ -63,7 +63,7 @@ const HowItWorksSection = () => {
             Nasıl <span className="text-neon-magenta neon-text">Başvurursun?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Tor Media Agency ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
+            Tor Media Agency ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir
           </p>
           <p className="text-sm text-muted-foreground mt-4 italic">
             "Birlikte uyumlu çalışabileceğimiz yayıncıları seçiyoruz."
