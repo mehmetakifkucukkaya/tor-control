@@ -16,7 +16,7 @@ const HeroSection = () => {
   }, []);
 
   const scrollToApply = () => {
-    document.getElementById('apply')?.scrollIntoView({ behavior: 'smooth' });
+    document.getElementById("apply")?.scrollIntoView({ behavior: "smooth" });
   };
 
   return (
@@ -79,9 +79,8 @@ const HeroSection = () => {
 
           {/* Description */}
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto opacity-0 animate-fade-in-up animate-delay-200">
-            Tor Control olarak 500+ yayıncıya profesyonel destek sağlıyoruz. 
-            Kişisel yönetici, marka işbirlikleri ve güvenilir ödeme sistemiyle 
-            yayın kariyerinizi bir üst seviyeye taşıyoruz.
+            Tor Media Agency olarak 500+ yayıncıya profesyonel destek sağlıyoruz. Kişisel yönetici, marka işbirlikleri
+            ve güvenilir ödeme sistemiyle yayın kariyerinizi bir üst seviyeye taşıyoruz.
           </p>
 
           {/* Slogan */}
@@ -108,7 +107,10 @@ const HeroSection = () => {
               { icon: Coins, value: "10M+", label: "Jeton Desteği" },
               { icon: GraduationCap, value: "200+", label: "Başarılı İş Birliği" },
             ].map((stat, index) => (
-              <div key={index} className="glass-card p-4 rounded-xl text-center group hover:scale-105 transition-all duration-300">
+              <div
+                key={index}
+                className="glass-card p-4 rounded-xl text-center group hover:scale-105 transition-all duration-300"
+              >
                 <stat.icon className="w-6 h-6 text-neon-cyan mx-auto mb-2" />
                 <div className="text-xl md:text-2xl font-display font-bold text-foreground">{stat.value}</div>
                 <div className="text-xs text-muted-foreground">{stat.label}</div>
