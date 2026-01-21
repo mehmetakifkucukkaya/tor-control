@@ -120,7 +120,7 @@ const HeroSection = () => {
 
           {/* Welcome message */}
           <p className="text-sm text-muted-foreground opacity-0 animate-fade-in-up animate-delay-500">
-            🎮 TikTok'ta CANLI YAYIN açıyorsan doğru yerdesin! • Tor Control ailesine Hoşgeldin!
+            🎮 TikTok'ta CANLI YAYIN açıyorsan doğru yerdesin! • Tor Media Agency ailesine Hoşgeldin!
           </p>
         </div>
       </div>

@@ -46,13 +46,13 @@ const HowItWorksSection = () => {
   return (
     <section id="how-it-works" className="py-24 relative overflow-hidden">
       {/* Background image */}
-      <div 
+      <div
         className="absolute inset-0 bg-cover bg-center bg-no-repeat opacity-25"
         style={{ backgroundImage: `url(${timelineBg})` }}
       />
       {/* Background overlay */}
       <div className="absolute inset-0 bg-gradient-to-b from-background via-background/90 to-background" />
-      
+
       {/* Glow effect */}
       <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-neon-purple/5 rounded-full blur-3xl" />
 
@@ -60,11 +60,10 @@ const HowItWorksSection = () => {
         {/* Section header */}
         <ScrollAnimationWrapper animation="fade-up" className="text-center max-w-3xl mx-auto mb-16">
           <h2 className="text-3xl md:text-4xl lg:text-5xl font-display font-bold mb-6">
-            Nasıl{" "}
-            <span className="text-neon-magenta neon-text">Başvurursun?</span>
+            Nasıl <span className="text-neon-magenta neon-text">Başvurursun?</span>
           </h2>
           <p className="text-lg text-muted-foreground">
-            Tor Control ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
+            Tor Media Agency ailesine katılmak çok kolay. Bu basit adımları takip et ve yayın kariyerini güçlendir.
           </p>
           <p className="text-sm text-muted-foreground mt-4 italic">
             "Birlikte uyumlu çalışabileceğimiz yayıncıları seçiyoruz."
@@ -83,17 +82,15 @@ const HowItWorksSection = () => {
                 const gradient = colorClasses[step.color as keyof typeof colorClasses];
 
                 return (
-                  <ScrollAnimationWrapper
-                    key={index}
-                    animation="zoom-in"
-                    delay={index * 150}
-                  >
+                  <ScrollAnimationWrapper key={index} animation="zoom-in" delay={index * 150}>
                     <div className="relative group h-full">
                       {/* Step card */}
                       <div className="relative glass-card p-6 pt-10 rounded-3xl text-center transition-all duration-500 hover:scale-105 border border-border/30 hover:border-neon-purple/50 backdrop-blur-xl overflow-hidden h-full min-h-[220px] flex flex-col">
                         {/* Gradient background glow */}
-                        <div className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`} />
-                        
+                        <div
+                          className={`absolute inset-0 bg-gradient-to-br ${gradient} opacity-10 group-hover:opacity-20 transition-opacity duration-500`}
+                        />
+
                         {/* Step number badge */}
                         <div className="absolute top-3 left-1/2 -translate-x-1/2">
                           <div className="relative">
@@ -105,7 +102,9 @@ const HowItWorksSection = () => {
                         </div>
 
                         {/* Icon container with modern styling */}
-                        <div className={`relative w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mt-4 border group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}>
+                        <div
+                          className={`relative w-16 h-16 mx-auto mb-4 rounded-2xl bg-gradient-to-br ${gradient} flex items-center justify-center mt-4 border group-hover:scale-110 transition-transform duration-300 shadow-lg flex-shrink-0`}
+                        >
                           <div className="absolute inset-1 rounded-xl bg-background/80 flex items-center justify-center">
                             <Icon className="w-7 h-7" />
                           </div>
