@@ -67,19 +67,8 @@ const Navigation = () => {
         <div className="container px-4">
           <div className="flex items-center justify-between h-16 md:h-20">
             {/* Logo */}
-            <a href="/" className="flex items-center gap-3 group relative z-[60]">
-              <div className="relative">
-                <div className="absolute inset-0 bg-neon-cyan/20 rounded-xl blur-md group-hover:bg-neon-cyan/30 transition-all duration-300" />
-                <img src={logo} alt="Tor Control Logo" className="h-10 w-auto relative z-10 drop-shadow-[0_0_8px_rgba(0,228,255,0.5)]" />
-              </div>
-              <div className="hidden sm:flex flex-col">
-                <span className="font-display font-bold text-xl bg-gradient-to-r from-neon-cyan to-foreground bg-clip-text text-transparent">
-                  TOR MEDIA
-                </span>
-                <span className="font-display font-bold text-sm text-neon-magenta -mt-1">
-                  AGENCY
-                </span>
-              </div>
+            <a href="/" className="flex items-center gap-2 group relative z-[60]">
+              <img src={logo} alt="Tor Control Logo" className="h-14 md:h-16 w-auto drop-shadow-[0_0_12px_rgba(0,228,255,0.6)]" />
             </a>
 
             {/* Desktop navigation */}
