@@ -30,25 +30,26 @@ const Navigation = () => {
   }, [isMobileMenuOpen]);
 
   const navLinks = [
-    { name: "Ana Sayfa", href: "#", icon: Home, color: "bg-neon-magenta" },
-    { name: "Avantajlar", href: "#benefits", icon: Star, color: "bg-yellow-500" },
-    { name: "Destekler", href: "#features", icon: Gift, color: "bg-rose-500" },
-    { name: "Yayıncılar", href: "#testimonials", icon: Users, color: "bg-orange-500" },
+    { name: "Ana Sayfa", href: "/", icon: Home, color: "bg-neon-magenta", isRoute: true },
+    { name: "Hakkımızda", href: "/hakkimizda", icon: Users, color: "bg-neon-cyan", isRoute: true },
+    { name: "Avantajlar", href: "#benefits", icon: Star, color: "bg-yellow-500", isRoute: false },
+    { name: "Destekler", href: "#features", icon: Gift, color: "bg-rose-500", isRoute: false },
   ];
 
-  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string) => {
-    e.preventDefault();
+  const handleNavClick = (e: React.MouseEvent<HTMLAnchorElement>, href: string, isRoute: boolean) => {
     setIsMobileMenuOpen(false);
 
+    if (isRoute) {
+      // Let the browser handle route navigation naturally
+      return;
+    }
+
+    e.preventDefault();
     // Small delay to allow menu to close before scrolling
     setTimeout(() => {
-      if (href === "#") {
-        window.scrollTo({ top: 0, behavior: "smooth" });
-      } else {
-        const element = document.querySelector(href);
-        if (element) {
-          element.scrollIntoView({ behavior: "smooth" });
-        }
+      const element = document.querySelector(href);
+      if (element) {
+        element.scrollIntoView({ behavior: "smooth" });
       }
     }, 100);
   };
@@ -143,7 +144,7 @@ const Navigation = () => {
                     isMobileMenuOpen ? "opacity-100 translate-x-0" : "opacity-0 -translate-x-4"
                   }`}
                   style={{ transitionDelay: isMobileMenuOpen ? `${index * 50}ms` : "0ms" }}
-                  onClick={(e) => handleNavClick(e, link.href)}
+                  onClick={(e) => handleNavClick(e, link.href, link.isRoute)}
                 >
                   <div className={`w-10 h-10 ${link.color} rounded-xl flex items-center justify-center`}>
                     <Icon className="w-5 h-5 text-white" />
@@ -240,7 +241,7 @@ const Navigation = () => {
             }`}
             style={{ transitionDelay: isMobileMenuOpen ? "350ms" : "0ms" }}
           >
-            <a href="#apply" onClick={(e) => handleNavClick(e, "#apply")}>
+            <a href="#apply" onClick={(e) => handleNavClick(e, "#apply", false)}>
               <Button variant="neon" size="lg" className="w-full">
                 Hemen Başvur
               </Button>
