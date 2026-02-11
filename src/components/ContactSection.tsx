@@ -44,7 +44,13 @@ const ContactSection = () => {
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+    if (name === "phone") {
+      const onlyDigits = value.replace(/\D/g, "").slice(0, 15);
+      setFormData({ ...formData, phone: onlyDigits });
+      return;
+    }
+    setFormData({ ...formData, [name]: value });
   };
 
   return (
@@ -186,6 +192,7 @@ const ContactSection = () => {
                       name="experience"
                       value={formData.experience}
                       onChange={handleChange}
+                      required
                       className="w-full bg-muted/50 border border-border/50 focus:border-neon-purple h-12 rounded-xl px-4 text-foreground"
                     >
                       <option value="" className="bg-background">
