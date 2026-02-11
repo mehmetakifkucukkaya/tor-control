@@ -191,16 +191,16 @@ const ContactSection = () => {
                       <option value="" className="bg-background">
                         LIVE Yayın Deneyimi
                       </option>
-                      <option value="beginner" className="bg-background">
+                      <option value="Yeni Başlayan (0-3 ay)" className="bg-background">
                         Yeni Başlayan (0-3 ay)
                       </option>
-                      <option value="intermediate" className="bg-background">
+                      <option value="Orta Seviye (3-12 ay)" className="bg-background">
                         Orta Seviye (3-12 ay)
                       </option>
-                      <option value="advanced" className="bg-background">
+                      <option value="Deneyimli (1+ yıl)" className="bg-background">
                         Deneyimli (1+ yıl)
                       </option>
-                      <option value="professional" className="bg-background">
+                      <option value="Profesyonel (2+ yıl)" className="bg-background">
                         Profesyonel (2+ yıl)
                       </option>
                     </select>
