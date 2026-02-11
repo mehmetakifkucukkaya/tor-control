@@ -17,12 +17,30 @@ const ContactSection = () => {
     message: "",
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const [isSubmitting, setIsSubmitting] = useState(false);
+
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    toast.success(
-      "Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Media Agency ailesine hoşgeldin!",
-    );
-    setFormData({ name: "", tiktokUsername: "", phone: "", followers: "", experience: "", message: "" });
+    setIsSubmitting(true);
+    try {
+      await fetch(
+        "https://script.google.com/macros/s/AKfycbyu2LVVFx0JR05e1P6mWIMgCCP769bMaa9t4qLGt592Rl57KtwvRtYv8AtuyWCfax14/exec",
+        {
+          method: "POST",
+          mode: "no-cors",
+          headers: { "Content-Type": "application/json" },
+          body: JSON.stringify(formData),
+        }
+      );
+      toast.success(
+        "Başvurunuz alındı! En kısa sürede sizinle iletişime geçeceğiz. Tor Media Agency ailesine hoşgeldin!"
+      );
+      setFormData({ name: "", tiktokUsername: "", phone: "", followers: "", experience: "", message: "" });
+    } catch {
+      toast.error("Başvuru gönderilemedi, lütfen tekrar deneyin.");
+    } finally {
+      setIsSubmitting(false);
+    }
   };
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
@@ -196,9 +214,9 @@ const ContactSection = () => {
                       className="bg-muted/50 border-border/50 focus:border-neon-purple rounded-xl resize-none"
                     />
 
-                    <Button type="submit" variant="neon" size="xl" className="w-full group">
-                      Ailemize Katıl
-                      <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
+                    <Button type="submit" variant="neon" size="xl" className="w-full group" disabled={isSubmitting}>
+                      {isSubmitting ? "Gönderiliyor..." : "Ailemize Katıl"}
+                      {!isSubmitting && <Send className="w-5 h-5 group-hover:translate-x-1 transition-transform" />}
                     </Button>
 
                     <p className="text-xs text-muted-foreground text-center">
